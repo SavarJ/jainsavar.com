@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
-import About from "./About";
-import Projects from "./Projects";
-import Skills from "./Skills";
+// import About from "./About";
+// import Projects from "./Projects";
+// import Skills from "./Skills;
 // import Contact from "./Contact";
 // import Footer from "./Footer";
 
 const App: React.FC = () => {
   return (
-    <main>
+    <main className="max-w-full">
       <Navbar />
-          <About />
-      <Projects />
-      <Skills />
+      {/* <About /> */}
+      {/* <Projects /> */}
+      {/* <Skills /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
     </main>
