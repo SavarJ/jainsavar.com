@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 // import About from "./About";
 // import Projects from "./Projects";
 // import Skills from "./Skills;
@@ -9,7 +9,27 @@ import Navbar from "./Navbar";
 const App: React.FC = () => {
   return (
     <main className="max-w-full">
-      <Navbar />
+      {/* Under construction page */}
+      <div className="min-h-screen flex items-center justify-center flex-col">
+        <h1 className="font-bold text-5xl p-4 text-blue-700">Savar Jain</h1>
+        <h1>
+          I am still in the process of building this personal portfolio site
+        </h1>
+        <h2>In the mean time, check out:</h2>
+        <div className="flex w-48 justify-evenly text-blue-800 pt-2">
+          <a href="https://github.com/SavarJ">
+            <i className="fa fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/savarjain">
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a href="mailto:jainsavar@gmail.com">
+            <i className="fa fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      {/* <Navbar /> */}
       {/* <About /> */}
       {/* <Projects /> */}
       {/* <Skills /> */}
