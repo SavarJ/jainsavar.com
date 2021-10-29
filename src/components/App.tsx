@@ -10,6 +10,7 @@ const App: React.FC = () => {
   return (
     <main className="max-w-full">
       {/* Under construction page */}
+      {/* This is my 'under construction' placeholder version. */}
       <div className="min-h-screen flex items-center justify-center flex-col p-5 text-center">
         <h1 className="font-bold text-5xl p-3 text-blue-700">Savar Jain</h1>
         <h1>
