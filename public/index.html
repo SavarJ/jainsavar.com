@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="canonical" href="https://jainsavar.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -21,12 +22,18 @@
     -->
 
   <!-- Fontawesome  -->
-  <script src="https://kit.fontawesome.com/68e357ed07.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/68e357ed07.js" crossorigin="anonymous"></script>
   <title>Savar Jain</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script>
+    const hostname = location.hostname;
+    if (hostname.indexOf('jainsavar.com') === -1 && hostname.indexOf('localhost') === -1) {
+      location.replace("https://jainsavar.com");
+    }
+  </script>
   <div id="root"></div>
   <!--
       This HTML file is a template.
