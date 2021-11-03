@@ -25,7 +25,14 @@ const Home: React.FC = () => {
           resume
         </a>{" "}
         or email me at{" "}
-        <a href="mailto:jainsavar@gmail.com">jainsavar@gmail.com</a>
+        <a
+          className="text-blue-500"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:jainsavar@gmail.com"
+        >
+          jainsavar@gmail.com
+        </a>
       </h3>
       {/* TODO: Replace font awesome with a custom svg icons */}
 
