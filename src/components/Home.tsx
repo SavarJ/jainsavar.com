@@ -1,28 +1,35 @@
 const Home: React.FC = () => {
   return (
-    <section className="" style={{ color: "#19B5FE" }}>
-      <h1>hi, savar here.</h1>
-      <h2>
-        I'm a high school senior who's passionate about Computer Science and
-        Software Engineering.
+    <section className="text-blue-200">
+      <img src="/logo192.png" alt="Logo-img" className="py-2" />
+      <h1 className="text-7xl">
+        hi,{" "}
+        <span className="font-bold" style={{ color: "#19B5FE" }}>
+          savar
+        </span>{" "}
+        here.
+      </h1>
+      <h2 className="mt-4 text-2xl max-w-3xl text-gray-400">
+        I'm a high school senior who's passionate about Web Development,
+        Artificial Intelligence, and Machine Learning.
       </h2>
       <br />
-      <h3>
+      <h3 className="text-xl text-gray-400">
         Feel free to check out my{" "}
         <a
+          className="text-blue-500"
           href="/assets/SavarJain-Resume"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Resume
+          resume
         </a>{" "}
         or email me at{" "}
         <a href="mailto:jainsavar@gmail.com">jainsavar@gmail.com</a>
       </h3>
-
       {/* TODO: Replace font awesome with a custom svg icons */}
 
-      <div className="">
+      <div className="flex justify-between w-32 mt-4">
         <a href="https://github.com/SavarJ">
           <i className="fa fa-github"></i>
         </a>

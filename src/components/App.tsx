@@ -8,7 +8,10 @@ import Home from "./Home";
 
 const App: React.FC = () => {
   return (
-    <main className="max-w-full p-16" style={{ backgroundColor: "#0a192f" }}>
+    <main
+      className="max-w-full p-16"
+      style={{ backgroundColor: "#0a192f", minHeight: "100vh" }}
+    >
       <Home />
       {/* <About /> */}
       {/* <Projects /> */}
