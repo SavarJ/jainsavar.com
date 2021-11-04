@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Home";
-// import About from "./About";
+import About from "./About";
 // import Projects from "./Projects";
 // import Skills from "./Skills;
 // import Contact from "./Contact";
@@ -8,12 +8,9 @@ import Home from "./Home";
 
 const App: React.FC = () => {
   return (
-    <main
-      className="max-w-full p-16"
-      style={{ backgroundColor: "#0a192f", minHeight: "100vh" }}
-    >
+    <main className="max-w-full p-16" style={{ backgroundColor: "#0a192f" }}>
       <Home />
-      {/* <About /> */}
+      <About />
       {/* <Projects /> */}
       {/* <Skills /> */}
       {/* <Contact /> */}
