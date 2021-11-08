@@ -1,20 +1,30 @@
+import Link from "./Link";
+
 const About: React.FC = () => {
   return (
-    <section style={{ minHeight: "100vh" }}>
-      <h1 className="text-4xl">console.log("about");</h1>
-      {/* !TODO: Animation of aspriring software engineer, high schooler, web developer, etc... */}
-      <div className="max-w-4xl">
+    <section>
+      <h1
+        className="text-5xl text-blue-200 font-bold"
+        style={{ color: "#19B5FE" }}
+      >
+        {"<About />"}
+      </h1>
+      <div className="max-w-3xl text-gray-400 mt-4">
         <p>
-          I'm currently a senior at Westhill High School. I have taken classes
-          such as Data Structures & Algorithms, Cyber Security and AP CSA. I am
-          currently a TA for DSA I have a passion for software engineering and I
-          am currently learning more about Artificial Intelligence and Machine
-          Learning.
+          Hello! I'm Savar Jain, currently a senior at{" "}
+          <Link link="http://https://en.wikipedia.org/wiki/Westhill_High_School_(Connecticut)">
+            {" "}
+            Westhill High School (CT)
+          </Link>
+          . I have taken many CS classes such as Data Structures & Algorithms,
+          Cyber Security and AP CSA. I am currently a TA for DSA I have a
+          passion for software engineering and I am currently learning more
+          about Artificial Intelligence and Machine Learning.
         </p>
+        <br />
         <p>
           When I'm not coding, you can find me tutoring Computer Science,
-          volunteering, playing the guitar, solving Rubik's Cubes, or watching a
-          movie.
+          playing the guitar, solving Rubik's Cubes, or watching a movie.
         </p>
       </div>
     </section>

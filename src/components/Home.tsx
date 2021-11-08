@@ -1,6 +1,6 @@
 const Home: React.FC = () => {
   return (
-    <section className="text-blue-200" style={{ minHeight: "100vh" }}>
+    <section className="text-blue-200 h-screen">
       <img src="/logo192.png" alt="Logo-img" className="py-2" />
       <h1 className="text-7xl">
         hi,{" "}
