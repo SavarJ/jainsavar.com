@@ -1,8 +1,8 @@
 import React from "react";
 import Home from "./Home";
 import About from "./About";
+import Skills from "./Skills";
 // import Projects from "./Projects";
-// import Skills from "./Skills;
 // import Contact from "./Contact";
 // import Footer from "./Footer";
 
@@ -11,8 +11,8 @@ const App: React.FC = () => {
     <main className="max-w-full p-16" style={{ backgroundColor: "#0a192f" }}>
       <Home />
       <About />
+      <Skills />
       {/* <Projects /> */}
-      {/* <Skills /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
     </main>
