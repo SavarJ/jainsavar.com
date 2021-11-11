@@ -1,5 +1,3 @@
-import Link from "./Link";
-
 interface SkillProps {
   name: string;
   type: SkillType;
