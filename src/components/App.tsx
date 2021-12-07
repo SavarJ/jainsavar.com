@@ -1,7 +1,7 @@
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
-// import Projects from "./Projects";
+import Projects from "./Projects";
 // import Contact from "./Contact";
 // import Footer from "./Footer";
 
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <Home />
       <About />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contact /> */}
       {/* <Footer /> */}
     </main>

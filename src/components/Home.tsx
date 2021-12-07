@@ -10,8 +10,8 @@ const Home: React.FC = () => {
         here.
       </h1>
       <h2 className="mt-4 text-2xl max-w-3xl text-gray-400">
-        I'm a high school senior who's passionate about Web Development,
-        Artificial Intelligence, and Machine Learning.
+        I'm a high school senior who's passionate about Web Development, Artificial Intelligence, and Machine
+        Learning.
       </h2>
       <br />
       <h3 className="text-xl text-gray-400">
