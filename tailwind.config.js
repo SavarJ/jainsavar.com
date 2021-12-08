@@ -8,6 +8,12 @@ module.exports = {
       colors: {
         orange: colors.orange,
       },
+      spacing: {
+        76: "18rem",
+        84: "21rem",
+        88: "22rem",
+        92: "23rem",
+      },
     },
   },
   variants: {

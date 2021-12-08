@@ -7,7 +7,10 @@ import Projects from "./Projects";
 
 const App: React.FC = () => {
   return (
-    <main className="max-w-full p-16" style={{ backgroundColor: "#0a192f" }}>
+    <main
+      className="max-w-full py-16 flex flex-col justify-center items-center"
+      style={{ backgroundColor: "#0a192f" }}
+    >
       <Home />
       <About />
       <Skills />
