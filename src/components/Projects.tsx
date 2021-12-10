@@ -27,26 +27,31 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="bg-red-800 rounded-lg p-6 shadow-2xl w-88 h-64 m-4">
+    <div className="bg-red-800 rounded-lg p-6 shadow-2xl w-88 h-68 m-4">
       <h3 className="font-bold text-2xl text-red-50">{project.title}</h3>
       <p className="text-gray-200 py-2">{project.description}</p>
       <p className="text-gray-400 italic text-sm">
         {project.languages.map((language, index) => {
           return (
-            <span key={index} className="inline-block bg-gray-800 text-white rounded-full px-3 py-1 mr-2">
+            <span
+              key={index}
+              className="inline-block bg-gray-800 text-white rounded-full px-3 py-1 mr-2 mb-2"
+            >
               {language}
             </span>
           );
         })}
       </p>
-      <a href={project.githubLink}>
-        <i className="fa fa-github"></i>
-      </a>
-      {project.liveLink && (
-        <a href={project.liveLink}>
-          <i className="fas fa-external-link-alt"></i>
+      <div className="flex justify-evenly mt-2">
+        <a href={project.githubLink} className="">
+          <i className="fa fa-github text-xl"></i>
         </a>
-      )}
+        {project.liveLink && (
+          <a href={project.liveLink}>
+            <i className="fas fa-external-link-alt text-xl"></i>
+          </a>
+        )}
+      </div>
     </div>
   );
 };
@@ -63,11 +68,20 @@ const projectsList: projectInterface[] = [
     languages: ["Node.js", "Express.js", "MongoDB", "CSS", "Bootstrap", "JavaScript"],
   },
   {
-    title: "Emailer",
+    title: "TodoList",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     githubLink: "https://github.com/SavarJ/Autoemailer",
-    languages: ["Python"],
+    liveLink: "https://thecsautograder.herokuapp.com/",
+    languages: ["HTML", "CSS", "Node.js", "Express.js", "MongoDB"],
+  },
+  {
+    title: "Simon's Game",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    githubLink: "https://github.com/SavarJ/Autoemailer",
+    liveLink: "https://thecsautograder.herokuapp.com/",
+    languages: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Emailer",
