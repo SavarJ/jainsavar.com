@@ -1,8 +1,9 @@
 const Footer: React.FC = () => {
   return (
-    <div>
-      <p> Footer </p>
-    </div>
+    <section className="mt-12 text-center">
+      <p>Built using React.js, Typescript, and TailwindCSS</p>
+      <p>© Savar Jain 2021. All rights reserved.</p>
+    </section>
   );
 };
 

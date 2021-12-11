@@ -2,7 +2,7 @@ import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 const App: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const App: React.FC = () => {
       <About />
       <Skills />
       <Projects />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

@@ -4,8 +4,7 @@ const Projects: React.FC = () => {
       <h1 className="text-5xl text-blue-200 font-bold mt-4" style={{ color: "#19B5FE" }}>
         {"<Projects />"}
       </h1>
-      <div className="max-w-3xl text-gray-400 mt-4 flex flex-wrap justify-between">
-        {/* <Project /> */}
+      <div className="max-w-3xl text-gray-400 mt-4 flex flex-wrap justify-between -ml-2">
         {projectsList.map((project, index) => (
           <Project key={index} project={project} />
         ))}
