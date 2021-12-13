@@ -26,30 +26,34 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="bg-red-800 rounded-lg p-6 shadow-2xl w-88 h-68 m-4">
-      <h3 className="font-bold text-2xl text-red-50">{project.title}</h3>
-      <p className="text-gray-200 py-2">{project.description}</p>
-      <p className="text-gray-400 italic text-sm">
-        {project.languages.map((language, index) => {
-          return (
-            <span
-              key={index}
-              className="inline-block bg-gray-800 text-white rounded-full px-3 py-1 mr-2 mb-2"
-            >
-              {language}
-            </span>
-          );
-        })}
-      </p>
-      <div className="flex justify-evenly mt-2">
-        <a href={project.githubLink} className="">
-          <i className="fa fa-github text-xl"></i>
-        </a>
-        {project.liveLink && (
-          <a href={project.liveLink}>
-            <i className="fas fa-external-link-alt text-xl"></i>
+    <div className="bg-red-800 rounded-lg p-6 shadow-2xl w-88 h-68 m-4 flex flex-col justify-between">
+      <div>
+        <h3 className="font-bold text-2xl text-red-50">{project.title}</h3>
+        <p className="text-gray-200 py-2">{project.description}</p>
+      </div>
+      <div>
+        <p className="text-gray-400 italic text-sm">
+          {project.languages.map((language, index) => {
+            return (
+              <span
+                key={index}
+                className="inline-block bg-gray-800 text-white rounded-full px-3 py-1 mr-2 mb-2"
+              >
+                {language}
+              </span>
+            );
+          })}
+        </p>
+        <div className="flex justify-evenly mt-2">
+          <a href={project.githubLink} className="">
+            <i className="fa fa-github text-xl"></i>
           </a>
-        )}
+          {project.liveLink && (
+            <a href={project.liveLink}>
+              <i className="fas fa-external-link-alt text-xl"></i>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -61,7 +65,7 @@ const projectsList: projectInterface[] = [
   {
     title: "TheCSAutograder",
     description:
-      "esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "A full stack web application that auto grades programming labs that are assigned to students and displays extensive submission details to the teachers. Will be used by the Computer Science Academy of Westhill (CSAW) with over 75+ estimated users",
     githubLink: "https://github.com/SavarJ/TheCSAutograder",
     liveLink: "https://thecsautograder.herokuapp.com/",
     languages: ["Node.js", "Express.js", "MongoDB", "CSS", "Bootstrap", "JavaScript"],

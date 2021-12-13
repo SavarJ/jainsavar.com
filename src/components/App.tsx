@@ -7,7 +7,7 @@ import Footer from "./Footer";
 const App: React.FC = () => {
   return (
     <main
-      className="max-w-full py-16 flex flex-col justify-center items-center"
+      className="max-w-full pt-16 pb-8 flex flex-col justify-center items-center"
       style={{ backgroundColor: "#0a192f" }}
     >
       <Home />
