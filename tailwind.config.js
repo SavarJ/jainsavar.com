@@ -7,12 +7,18 @@ module.exports = {
     extend: {
       colors: {
         orange: colors.orange,
+        cyan: colors.cyan,
+        myblue: "#0b4363",
       },
       spacing: {
         76: "18rem",
         84: "21rem",
         88: "22rem",
         92: "23rem",
+      },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.25)",
+        "4xl": "0 50px 90px -25px rgba(0, 0, 0, 0.5)",
       },
     },
   },

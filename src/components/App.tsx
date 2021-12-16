@@ -6,9 +6,10 @@ import Footer from "./Footer";
 
 const App: React.FC = () => {
   return (
+    // dark mode
     <main
-      className="max-w-full pt-16 pb-8 flex flex-col justify-center items-center"
-      style={{ backgroundColor: "#0a192f" }}
+      className="max-w-full pt-16 pb-8 flex flex-col justify-center items-center bg-gradient-to-b from-black to-myblue"
+      // style={{ backgroundColor: "#0a192f" }}
     >
       <Home />
       <About />
