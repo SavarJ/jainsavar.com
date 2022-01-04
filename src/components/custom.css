@@ -1,0 +1,73 @@
+.project {
+  transition: transform ease-in 150ms;
+}
+.project:hover,
+.project:focus,
+.project:active {
+  transform: translateY(-2.5%);
+}
+
+.icon {
+  transition: transform ease-in 150ms;
+}
+.icon:hover,
+.icon:focus,
+.icon:active {
+  transform: scale(1.25);
+}
+:root {
+  --link-color: transparent;
+}
+
+.link {
+  position: relative;
+}
+.link::before,
+.link::after {
+  position: absolute;
+  background-color: var(--link-color);
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: width 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.link::before {
+  left: 0;
+  bottom: 0;
+}
+.link::after {
+  right: 0;
+  bottom: 0;
+}
+.link:hover::before,
+.link:hover::after {
+  width: 50%;
+}
+/*  all rainbow colors */
+.link-red {
+  --link-color: #ff0000;
+}
+.link-blue {
+  --link-color: blue;
+}
+.link-green {
+  --link-color: green;
+}
+.link-yellow {
+  --link-color: yellow;
+}
+.link-orange {
+  --link-color: orange;
+}
+.link-purple {
+  --link-color: purple;
+}
+.link-pink {
+  --link-color: pink;
+}
+.link-brown {
+  --link-color: brown;
+}
+.link-gray {
+  --link-color: gray;
+}

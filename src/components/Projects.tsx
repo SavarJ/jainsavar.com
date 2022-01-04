@@ -1,3 +1,4 @@
+import "./custom.css";
 const Projects: React.FC = () => {
   return (
     <section>
@@ -26,7 +27,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="rounded-lg p-6 shadow-xl w-88 h-68 m-4 flex flex-col justify-between hover:shadow-4xl ">
+    <div className="rounded-lg p-6 shadow-xl w-88 h-68 m-4 flex flex-col justify-between hover:shadow-4xl relative hover:bottom-2 project">
       <div>
         <h3 className="font-bold text-2xl text-blue-50">{project.title}</h3>
         <p className="text-gray-200 py-2 text-base">{project.description}</p>
@@ -46,11 +47,11 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         </p>
         <div className="flex justify-evenly mt-2">
           <a href={project.githubLink}>
-            <i className="fa fa-github text-xl"></i>
+            <i className="fa fa-github text-xl icon"></i>
           </a>
           {project.liveLink && (
             <a href={project.liveLink}>
-              <i className="fas fa-external-link-alt text-xl"></i>
+              <i className="fas fa-external-link-alt text-xl icon"></i>
             </a>
           )}
         </div>

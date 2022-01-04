@@ -1,3 +1,4 @@
+import "./custom.css";
 interface LinkProps {
   link: string;
   children: React.ReactNode;
@@ -5,7 +6,7 @@ interface LinkProps {
 }
 const Link: React.FC<LinkProps> = (props) => {
   return (
-    <a href={props.link} target="_blank" rel="noopener noreferrer">
+    <a className="link" href={props.link} target="_blank" rel="noopener noreferrer">
       {props.children}
     </a>
   );
