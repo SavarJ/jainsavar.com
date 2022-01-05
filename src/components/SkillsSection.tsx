@@ -1,3 +1,5 @@
+import "./custom.css";
+import { SectionBody, SectionTitle } from "./Components";
 interface SkillProps {
   name: string;
   type: SkillType;
@@ -9,13 +11,11 @@ enum SkillType {
   Tool,
 }
 
-const Skills: React.FC = () => {
+const SkillsSection: React.FC = () => {
   return (
     <section>
-      <h1 className="text-5xl text-blue-200 font-bold mt-4" style={{ color: "#19B5FE" }}>
-        {"<Skills />"}
-      </h1>
-      <div className="max-w-3xl text-gray-400 mt-4 flex flex-wrap">
+      <SectionTitle>{"<Skills />"}</SectionTitle>
+      <SectionBody class="flex flex-wrap">
         {languages.map((language, idx) => {
           return <Skill name={language} type={SkillType.Language} key={idx} />;
         })}
@@ -28,7 +28,7 @@ const Skills: React.FC = () => {
         {tools.map((tool, idx) => {
           return <Skill name={tool} type={SkillType.Tool} key={idx} />;
         })}
-      </div>
+      </SectionBody>
     </section>
   );
 };
@@ -39,7 +39,9 @@ const Skill: React.FC<SkillProps> = ({ name, type }) => {
   colorStyles.set(SkillType.Framework, "bg-yellow-600 text-white border-yellow-400");
   colorStyles.set(SkillType.Tool, "bg-pink-800 text-white border-pink-400");
 
-  const colorStyle = colorStyles.get(type) + "border-2 shadow-2xl px-5 py-2 rounded-lg m-2";
+  const colorStyle = `${colorStyles.get(
+    type
+  )} border shadow-2xl px-5 py-2 rounded-lg m-2 hover:shadow-4xl skill`;
   return (
     <div className={colorStyle}>
       <h1>{name}</h1>
@@ -49,6 +51,6 @@ const Skill: React.FC<SkillProps> = ({ name, type }) => {
 const languages = ["Javascript", "Typescript", "Java", "Python", "HTML", "CSS"];
 const frameworks = ["React.js", "Node.js", "Express.js", "EJS", "Flask", "Bootstrap", "TailwindCSS"];
 const databases = ["MongoDB", "Google Cloud Datastore"];
-const tools = ["Git", "GitHub", "Heroku", "Firebase"];
+const tools = ["Git", "GitHub", "Heroku", "Firebase", "Unix/Linux Terminal"];
 
-export default Skills;
+export default SkillsSection;

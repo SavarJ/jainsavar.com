@@ -7,13 +7,21 @@
   transform: translateY(-2.5%);
 }
 
+.skill {
+  transition: tranform ease-in 150ms;
+}
+.skill:hover,
+.skill:focus,
+.skill:active {
+  transform: translateY(-15%);
+}
 .icon {
   transition: transform ease-in 150ms;
 }
 .icon:hover,
 .icon:focus,
 .icon:active {
-  transform: scale(1.25);
+  transform: scale(1.35);
 }
 :root {
   --link-color: transparent;
@@ -21,6 +29,7 @@
 
 .link {
   position: relative;
+  color: var(--link-color);
 }
 .link::before,
 .link::after {

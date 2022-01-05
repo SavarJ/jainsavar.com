@@ -6,7 +6,12 @@ interface LinkProps {
 }
 const Link: React.FC<LinkProps> = (props) => {
   return (
-    <a className="link" href={props.link} target="_blank" rel="noopener noreferrer">
+    <a
+      className={props.color ? `link link-${props.color}` : "icon"}
+      href={props.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {props.children}
     </a>
   );
