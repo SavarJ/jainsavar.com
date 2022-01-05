@@ -1,5 +1,19 @@
 import "./custom.css";
 import { SectionBody, SectionTitle } from "./Components";
+
+const SkillsSection: React.FC = () => {
+  return (
+    <section>
+      <SectionTitle>{"<Skills />"}</SectionTitle>
+      <SectionBody class="flex flex-wrap">
+        <Languages />
+        <Frameworks />
+        <Databases />
+        <Tools />
+      </SectionBody>
+    </section>
+  );
+};
 interface SkillProps {
   name: string;
   type: SkillType;
@@ -10,26 +24,41 @@ enum SkillType {
   Database,
   Tool,
 }
-
-const SkillsSection: React.FC = () => {
+const Languages: React.FC = () => {
   return (
-    <section>
-      <SectionTitle>{"<Skills />"}</SectionTitle>
-      <SectionBody class="flex flex-wrap">
-        {languages.map((language, idx) => {
-          return <Skill name={language} type={SkillType.Language} key={idx} />;
-        })}
-        {frameworks.map((framework, idx) => {
-          return <Skill name={framework} type={SkillType.Framework} key={idx} />;
-        })}
-        {databases.map((database, idx) => {
-          return <Skill name={database} type={SkillType.Database} key={idx} />;
-        })}
-        {tools.map((tool, idx) => {
-          return <Skill name={tool} type={SkillType.Tool} key={idx} />;
-        })}
-      </SectionBody>
-    </section>
+    <>
+      {languages.map((language, idx) => {
+        return <Skill name={language} type={SkillType.Language} key={idx} />;
+      })}
+    </>
+  );
+};
+
+const Frameworks: React.FC = () => {
+  return (
+    <>
+      {frameworks.map((framework, idx) => {
+        return <Skill name={framework} type={SkillType.Framework} key={idx} />;
+      })}
+    </>
+  );
+};
+const Databases: React.FC = () => {
+  return (
+    <>
+      {databases.map((database, idx) => {
+        return <Skill name={database} type={SkillType.Database} key={idx} />;
+      })}
+    </>
+  );
+};
+const Tools: React.FC = () => {
+  return (
+    <>
+      {tools.map((tool, idx) => {
+        return <Skill name={tool} type={SkillType.Tool} key={idx} />;
+      })}
+    </>
   );
 };
 const Skill: React.FC<SkillProps> = ({ name, type }) => {
@@ -51,6 +80,6 @@ const Skill: React.FC<SkillProps> = ({ name, type }) => {
 const languages = ["Javascript", "Typescript", "Java", "Python", "HTML", "CSS"];
 const frameworks = ["React.js", "Node.js", "Express.js", "EJS", "Flask", "Bootstrap", "TailwindCSS"];
 const databases = ["MongoDB", "Google Cloud Datastore"];
-const tools = ["Git", "GitHub", "Heroku", "Firebase", "Unix/Linux Terminal"];
+const tools = ["Git", "GitHub", "Heroku", "Firebase", "MongoDB Atlas", "Unix/Linux Terminal"];
 
 export default SkillsSection;
