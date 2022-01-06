@@ -1,3 +1,4 @@
+const Fade = require("react-reveal/Fade");
 interface ComponentProps {
   children: React.ReactNode;
   class?: string;
@@ -9,7 +10,15 @@ const FullSection: React.FC<ComponentProps> = (props) => {
 
 const NormalSection: React.FC<ComponentProps> = (props) => {
   const className = `text-blue-200 ${props.class}`;
-  return <section className={className}>{props.children}</section>;
+  return (
+    // <Fade up duration={1000}>
+    <section className={className}>
+      <Fade up duration={2000}>
+        {props.children}
+      </Fade>
+    </section>
+    // </Fade>
+  );
 };
 
 const SectionTitle: React.FC<ComponentProps> = (props) => {

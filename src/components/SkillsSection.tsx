@@ -1,9 +1,9 @@
 import "./custom.css";
-import { SectionBody, SectionTitle } from "./Components";
+import { NormalSection, SectionBody, SectionTitle } from "./Components";
 
 const SkillsSection: React.FC = () => {
   return (
-    <section>
+    <NormalSection>
       <SectionTitle>{"<Skills />"}</SectionTitle>
       <SectionBody class="flex flex-wrap">
         <Languages />
@@ -11,7 +11,7 @@ const SkillsSection: React.FC = () => {
         <Databases />
         <Tools />
       </SectionBody>
-    </section>
+    </NormalSection>
   );
 };
 interface SkillProps {
