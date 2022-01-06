@@ -1,5 +1,6 @@
 import { FullSection } from "./Components";
 import Link from "./Link";
+import "./custom.css";
 const HomeSection: React.FC = () => {
   return (
     <FullSection class="-mb-40">
@@ -34,14 +35,7 @@ const Socials: React.FC = () => {
 };
 
 const SelfLogo: React.FC = () => {
-  return (
-    <>
-      <div className="w-60 h-60 bg-blue-500 relative overflow-hidden" style={{ borderRadius: "100%" }}>
-        <img src="/Logo2.png" alt="Logo-img" className=" top-0 py-2  border-2 border-red-500" />;
-      </div>
-      <img src="/Logo2.png" alt="Logo-img" className=" top-0 py-2  border-2 border-red-500" />;
-    </>
-  );
+  return <img src="/image.png" alt="Logo-img" className="h-40 mb-8" />;
 };
 const SelfHeading: React.FC = () => {
   return (
