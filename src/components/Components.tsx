@@ -22,8 +22,8 @@ const SectionTitle: React.FC<ComponentProps> = (props) => {
 };
 
 const SectionBody: React.FC<ComponentProps> = (props) => {
-  const className = `max-w-3xl text-gray-400 mt-4 ${props.class}`;
-  return <h1 className={className}>{props.children}</h1>;
+  const className = `max-w-3xl text-gray-400 mt-8 ${props.class}`;
+  return <div className={className}>{props.children}</div>;
 };
 
 export { FullSection, SectionTitle, SectionBody, NormalSection };

@@ -34,7 +34,14 @@ const Socials: React.FC = () => {
 };
 
 const SelfLogo: React.FC = () => {
-  return <img src="/logo192.png" alt="Logo-img" className="py-2" />;
+  return (
+    <>
+      <div className="w-60 h-60 bg-blue-500 relative overflow-hidden" style={{ borderRadius: "100%" }}>
+        <img src="/Logo2.png" alt="Logo-img" className=" top-0 py-2  border-2 border-red-500" />;
+      </div>
+      <img src="/Logo2.png" alt="Logo-img" className=" top-0 py-2  border-2 border-red-500" />;
+    </>
+  );
 };
 const SelfHeading: React.FC = () => {
   return (
@@ -50,8 +57,7 @@ const SelfHeading: React.FC = () => {
 const SelfDescription: React.FC = () => {
   return (
     <h2 className="mt-4 text-2xl max-w-3xl text-gray-400">
-      I'm a high school senior who's passionate about Web Development, Artificial Intelligence, and Machine
-      Learning.
+      I'm a high school senior who's passionate about Computer Science and Software Engineering.
     </h2>
   );
 };
@@ -62,7 +68,6 @@ const SelfSubDescription: React.FC = () => {
       <Link link="/assets/SavarJain-Resume" color="orange">
         resume
       </Link>{" "}
-      {/* // className="text-blue-500" */}
       or email me at{" "}
       <Link link="mailto:jainsavar@gmail.com" color="orange">
         jainsavar@gmail.com
