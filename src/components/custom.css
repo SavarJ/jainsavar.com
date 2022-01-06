@@ -22,6 +22,7 @@
 .icon:focus,
 .icon:active {
   transform: scale(1.35);
+  color: #eadb8a;
 }
 :root {
   --link-color: transparent;
@@ -29,7 +30,15 @@
 
 .link {
   position: relative;
-  color: var(--link-color);
+  /* color: var(--link-color); */
+  background: var(--link-color);
+  background: -webkit-linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
+  background: -moz-linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
+  /* background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%); */
+  background: linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
+  /* background: linear-gradient(to right, #121fcf 0%, #cf1512 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .link::before,
 .link::after {
@@ -66,7 +75,8 @@
   --link-color: yellow;
 }
 .link-orange {
-  --link-color: orange;
+  --link-color: #eadb8a;
+  /* --link-color: orange; */
 }
 .link-purple {
   --link-color: purple;
