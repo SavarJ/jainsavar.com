@@ -35,7 +35,7 @@ const Socials: React.FC = () => {
 };
 
 const SelfLogo: React.FC = () => {
-  return <img src="/image.png" alt="Logo-img" className="h-40 mb-8" />;
+  return <img src="/logo.png" alt="Logo-img" className="h-40 mb-8" />;
 };
 const SelfHeading: React.FC = () => {
   return (
