@@ -25,7 +25,7 @@ const Paragraph: React.FC<ComponentProps> = (props) => {
 const FirstParagraph: React.FC = () => {
   return (
     <>
-      <img src="/coding.png" alt="img" className="pr-4 pb-4 w-36 float-left " />
+      <img src="/coding.png" alt="img" className="pr-8 pb-4 w-36 float-left " />
       <Paragraph>
         Hello! I'm Savar Jain, currently a senior at{" "}
         <Link link="http://https://en.wikipedia.org/wiki/Westhill_High_School_(Connecticut)" color={"brown"}>
