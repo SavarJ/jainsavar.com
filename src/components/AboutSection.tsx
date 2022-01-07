@@ -1,4 +1,5 @@
 import { NormalSection, SectionTitle, SectionBody } from "./Components";
+import "./custom.css";
 const AboutSection: React.FC = () => {
   return (
     <NormalSection>
@@ -16,9 +17,7 @@ interface ComponentProps {
   class?: string;
 }
 const Paragraph: React.FC<ComponentProps> = (props) => {
-  return (
-    <p className={`text-lg tracking-wide leading-relaxed text-gray-300 ${props.class}`}>{props.children}</p>
-  );
+  return <p className={`text-lg leading-relaxed text-gray-300 ${props.class}`}>{props.children}</p>;
 };
 
 const FirstParagraph: React.FC = () => {

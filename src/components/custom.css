@@ -32,11 +32,10 @@
   position: relative;
   /* color: var(--link-color); */
   background: var(--link-color);
+  background-clip: text;
   background: -webkit-linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
   background: -moz-linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
-  /* background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%); */
   background: linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
-  /* background: linear-gradient(to right, #121fcf 0%, #cf1512 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -89,4 +88,54 @@
 }
 .link-gray {
   --link-color: gray;
+}
+/* 
+@import  url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"); */
+
+.font-inconsolata {
+  font-family: "Inconsolata", monospace;
+}
+.font-zb {
+  font-family: "Zilla Slab", serif;
+}
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.Typist .Cursor--blinking {
+  /* all: revert; */
+  @apply text-7xl;
+  color: #eadb8a;
+  opacity: 1;
+  animation: my-blink 1s linear infinite;
+}
+
+@keyframes my-blink {
+  0% {
+    color: #eadb8a;
+  }
+  100% {
+    color: white;
+  }
+}
+@-webkit-keyframes my-blink {
+  0% {
+    color: #eadb8a;
+  }
+  100% {
+    color: white;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: linear-gradient(black, #0b4363);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
+  border-radius: 10px;
 }

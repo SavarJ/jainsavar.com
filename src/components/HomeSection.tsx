@@ -1,3 +1,4 @@
+import Typist from "react-typist";
 import { FullSection } from "./Components";
 import Link from "./Link";
 import "./custom.css";
@@ -39,25 +40,28 @@ const SelfLogo: React.FC = () => {
 };
 const SelfHeading: React.FC = () => {
   return (
-    <h1 className="text-7xl">
-      hi,{" "}
-      <span className="font-bold" style={{ color: "#19B5FE" }}>
-        savar
-      </span>{" "}
-      here.
-    </h1>
+    // show the cursor
+    <Typist startDelay={300} avgTypingDelay={120}>
+      <h1 className="text-7xl font-inconsolata inline-block">
+        Hi, I'm{" "}
+        <span className="font-bold tracking-wide" style={{ color: "#19B5FE" }}>
+          Savar
+        </span>
+        !
+      </h1>
+    </Typist>
   );
 };
 const SelfDescription: React.FC = () => {
   return (
-    <h2 className="mt-4 text-2xl max-w-3xl text-gray-400">
+    <h2 className="mt-4 text-2xl max-w-3xl text-gray-400 font-zb">
       I'm a high school senior who's passionate about Computer Science and Software Engineering.
     </h2>
   );
 };
 const SelfSubDescription: React.FC = () => {
   return (
-    <h3 className="text-xl text-gray-400">
+    <h3 className="text-xl text-gray-400 font-zb">
       Feel free to check out my{" "}
       <Link link="/assets/SavarJain-Resume" color="orange">
         resume

@@ -33,7 +33,7 @@ const NormalSection: React.FC<ComponentProps> = (props) => {
 };
 
 const SectionTitle: React.FC<ComponentProps> = (props) => {
-  const className = `text-5xl text-blue-200 font-bold ${props.class}`;
+  const className = `text-5xl text-blue-200 font-bold font-zb ${props.class}`;
   return (
     <h1 className={className} style={{ color: "#19B5FE" }}>
       {props.children}
@@ -42,7 +42,7 @@ const SectionTitle: React.FC<ComponentProps> = (props) => {
 };
 
 const SectionBody: React.FC<ComponentProps> = (props) => {
-  const className = `max-w-3xl text-gray-400 mt-8 ${props.class}`;
+  const className = `max-w-3xl text-gray-400 mt-8 font-rubik ${props.class}`;
   return <div className={className}>{props.children}</div>;
 };
 
