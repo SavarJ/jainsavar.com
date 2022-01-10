@@ -3,17 +3,17 @@
   "name": "Savar Jain | Software Engineer",
   "icons": [
     {
-      "src": "logo.ico",
+      "src": "logo.jpg.min.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
+      "src": "logo.jpg.min.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo.png",
+      "src": "logo.jpg.min.svg",
       "type": "image/png",
       "sizes": "512x512"
     }

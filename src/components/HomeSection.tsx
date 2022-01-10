@@ -1,9 +1,12 @@
+import React, { Suspense } from "react";
 import Typist from "react-typist";
 import { FullSection } from "./Components";
 import Link from "./Link";
 import "./custom.css";
+// import Logo from "./Logo";
 import { useState } from "react";
 const Zoom = require("react-reveal/Zoom");
+const Logo = React.lazy(() => import("./Logo"));
 
 const HomeSection: React.FC = () => {
   const [selfHeadingDone, setSelfHeadingDone] = useState(false);
@@ -25,7 +28,11 @@ const HomeSection: React.FC = () => {
 };
 
 const SelfLogo: React.FC = () => {
-  return <img src="/logo.png" alt="Logo-img" className="h-40 mb-8" />;
+  return (
+    <Suspense fallback={<div className="text-gray-400">Loading...</div>}>
+      <Logo />
+    </Suspense>
+  );
 };
 interface SelfHeadingProps {
   setSelfHeadingDone: (value: boolean) => void;
