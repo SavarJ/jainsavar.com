@@ -6,6 +6,7 @@ import "./custom.css";
 // import Logo from "./Logo";
 import { useState } from "react";
 const Zoom = require("react-reveal/Zoom");
+const Fade = require("react-reveal/Fade");
 const Logo = React.lazy(() => import("./Logo"));
 
 const HomeSection: React.FC = () => {
@@ -29,9 +30,11 @@ const HomeSection: React.FC = () => {
 
 const SelfLogo: React.FC = () => {
   return (
-    <Suspense fallback={<div className="text-gray-400">Loading...</div>}>
-      <Logo />
-    </Suspense>
+    <Fade duration={2000} delay={100}>
+      <Suspense fallback={<div className="text-gray-400">Loading...</div>}>
+        <Logo />
+      </Suspense>
+    </Fade>
   );
 };
 interface SelfHeadingProps {

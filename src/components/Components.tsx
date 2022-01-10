@@ -12,13 +12,7 @@ const MainSection: React.FC<ComponentProps> = (props) => {
 };
 const FullSection: React.FC<ComponentProps> = (props) => {
   const className = `text-blue-200 min-h-screen ${props.class}`;
-  return (
-    <section className={className}>
-      <Fade duration={2000} delay={100}>
-        {props.children}
-      </Fade>
-    </section>
-  );
+  return <section className={className}>{props.children}</section>;
 };
 
 const NormalSection: React.FC<ComponentProps> = (props) => {

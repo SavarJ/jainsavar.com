@@ -147,3 +147,7 @@ body::-webkit-scrollbar-thumb {
     @apply -mb-40;
   }
 }
+
+img {
+  pointer-events: none;
+}
