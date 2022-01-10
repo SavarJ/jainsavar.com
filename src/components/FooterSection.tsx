@@ -24,7 +24,7 @@ const FooterSection: React.FC = () => {
           </Link>
           {" and "}
           <Link link="https://jarin.me" color="orange">
-            Gazi Jarin
+            Gazi Jarin.
           </Link>
         </p>
         <p className="text-blue-200 mt-2 font-bold font-zb text-lg">
