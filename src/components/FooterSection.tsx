@@ -5,7 +5,7 @@ const FooterSection: React.FC = () => {
   return (
     <LightSpeed>
       <section className="text-center">
-        <p className="text-blue-200">
+        <p className="text-blue-200 text-sm">
           Built using{" "}
           <Link link="https://reactjs.org" color="orange">
             React.js
@@ -27,7 +27,9 @@ const FooterSection: React.FC = () => {
             Gazi Jarin
           </Link>
         </p>
-        <p className="text-blue-200 mt-2 font-bold">© Savar Jain 2021. All rights reserved.</p>
+        <p className="text-blue-200 mt-2 font-bold font-zb text-lg">
+          © Savar Jain 2021. All rights reserved.
+        </p>
       </section>
     </LightSpeed>
   );
