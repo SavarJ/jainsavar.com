@@ -112,7 +112,7 @@
 
 @keyframes my-blink {
   0% {
-    color: #eadb8a;
+    color: #b48d4a;
   }
   100% {
     color: white;
@@ -120,7 +120,7 @@
 }
 @-webkit-keyframes my-blink {
   0% {
-    color: #eadb8a;
+    color: #b48d4a;
   }
   100% {
     color: white;
