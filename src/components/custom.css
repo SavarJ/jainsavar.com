@@ -142,7 +142,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-@media (max-height: 760px) {
+@media (width> 400px) and (height >= 657px) {
   .full-section {
     @apply -mb-40;
   }

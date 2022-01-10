@@ -7,6 +7,7 @@ const ProjectsSection: React.FC = () => {
       <SectionTitle class="-mb-4">{"<Projects />"}</SectionTitle>
       <SectionBody class="flex flex-wrap justify-between -ml-4">
         <Projects />
+        <MoreOnGithub />
       </SectionBody>
     </NormalSection>
   );
@@ -18,6 +19,18 @@ const Projects: React.FC = () => {
       {projectsList.map((project, index) => (
         <Project key={index} project={project} />
       ))}
+    </>
+  );
+};
+
+const MoreOnGithub: React.FC = () => {
+  return (
+    <>
+      <p className="w-full text-center mt-2 text-sm">
+        <Link link="https://github.com/SavarJ" color="orange">
+          EXPLORE MORE ON GITHUB
+        </Link>
+      </p>
     </>
   );
 };
