@@ -104,7 +104,7 @@
 
 .Typist .Cursor--blinking {
   /* all: revert; */
-  @apply text-7xl;
+  /* @apply text-7xl; */
   color: #eadb8a;
   opacity: 1;
   animation: my-blink 1s linear infinite;
