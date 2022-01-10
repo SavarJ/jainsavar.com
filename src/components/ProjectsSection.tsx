@@ -5,7 +5,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <NormalSection>
       <SectionTitle class="-mb-4">{"<Projects />"}</SectionTitle>
-      <SectionBody class="flex flex-wrap justify-between -ml-2">
+      <SectionBody class="flex flex-wrap justify-between -ml-4">
         <Projects />
       </SectionBody>
     </NormalSection>
@@ -54,7 +54,7 @@ interface ComponentProps {
 
 const ProjectCard: React.FC<ComponentProps> = (props) => {
   return (
-    <div className="rounded-lg p-6 shadow-xl w-88 h-68 m-4 flex flex-col justify-between hover:shadow-4xl relative project">
+    <div className="rounded-lg p-6 shadow-xl max-w-88 md:w-88 h-68 m-4 flex flex-col justify-between hover:shadow-4xl relative project">
       {props.children}
     </div>
   );

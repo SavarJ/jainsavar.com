@@ -1,10 +1,12 @@
 .project {
   transition: transform ease-in 150ms;
+  outline: 2px dotted #0b4363;
 }
 .project:hover,
 .project:focus,
 .project:active {
   transform: translateY(-2.5%);
+  outline: 3px solid #0b4363;
 }
 
 .skill {
@@ -138,4 +140,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to right, #eee697, #b48d4a, #fdf4a1);
   border-radius: 10px;
+}
+
+@media (max-height: 760px) {
+  .full-section {
+    @apply -mb-40;
+  }
 }

@@ -5,13 +5,13 @@ interface ComponentProps {
 }
 const MainSection: React.FC<ComponentProps> = (props) => {
   return (
-    <main className="max-w-full pt-16 pb-8 flex flex-col justify-center items-center space-y-24 bg-gradient-to-b from-black to-myblue">
+    <main className="px-12 max-w-full pt-16 pb-8 flex flex-col justify-center items-center space-y-24 bg-gradient-to-b from-black to-myblue">
       {props.children}
     </main>
   );
 };
 const FullSection: React.FC<ComponentProps> = (props) => {
-  const className = `text-blue-200 h-screen ${props.class}`;
+  const className = `text-blue-200 min-h-screen ${props.class}`;
   return (
     <section className={className}>
       <Fade duration={2000} delay={100}>

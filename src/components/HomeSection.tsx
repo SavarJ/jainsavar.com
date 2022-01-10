@@ -10,7 +10,7 @@ const HomeSection: React.FC = () => {
   const [selfDescriptionDone, setSelfDescriptionDone] = useState(false);
   const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(false);
   return (
-    <FullSection class="-mb-40">
+    <FullSection class="full-section">
       <SelfLogo />
       <SelfHeading setSelfHeadingDone={setSelfHeadingDone} />
       <SelfDescription selfHeadingDone={selfHeadingDone} setSelfDescriptionDone={setSelfDescriptionDone} />
