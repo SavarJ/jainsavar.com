@@ -1,3 +1,7 @@
+:root {
+  --link-color: transparent;
+  scroll-behavior: smooth;
+}
 .project {
   transition: transform ease-in 150ms;
   outline: 2px dotted #0b4363;
@@ -26,9 +30,6 @@
 .icon:active {
   transform: scale(1.35);
   fill: #eadb8a;
-}
-:root {
-  --link-color: transparent;
 }
 
 .link {
@@ -156,4 +157,77 @@ body::-webkit-scrollbar-thumb {
 }
 img {
   pointer-events: none;
+}
+
+.arrow-container {
+  position: relative;
+  height: 100px;
+  /* background-color: lightblue; */
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+}
+.arrow-1 {
+  border-right: 2px solid #eee697;
+  border-bottom: 2px solid #eee697;
+  top: 0;
+  animation: arrow-1-blink 1.5s ease-out infinite;
+}
+.arrow-2 {
+  border-right: 2px solid #b48d4a;
+  border-bottom: 2px solid #b48d4a;
+  top: 10%;
+  animation: arrow-2-blink 1.5s ease-out infinite;
+}
+.arrow-3 {
+  border-right: 2px solid #fdf4a1;
+  border-bottom: 2px solid #fdf4a1;
+  top: 20%;
+  animation: arrow-3-blink 1.5s ease-out infinite;
+}
+@keyframes arrow-1-blink {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrow-2-blink {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrow-3-blink {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

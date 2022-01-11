@@ -5,11 +5,13 @@ import SelfHeading from "./SelfHeading";
 import SelfDescription from "./SelfDescription";
 import SelfSubDescription from "./SelfSubDescription";
 import SelfSocials from "./SelfSocials";
+import MoreArrow from "./MoreArrow";
 
 const HomeSection: React.FC = () => {
   const [selfHeadingDone, setSelfHeadingDone] = useState(false);
   const [selfDescriptionDone, setSelfDescriptionDone] = useState(false);
   const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(false);
+  const [selfSocialsDone, setSelfSocialsDone] = useState(false);
   return (
     <FullSection className="full-section">
       <SelfLogo />
@@ -20,7 +22,8 @@ const HomeSection: React.FC = () => {
         selfDescriptionDone={selfDescriptionDone}
         setSelfSubDescription={setSelfSubDescriptionDone}
       />
-      <SelfSocials selfSubDescriptionDone={selfSubDescriptionDone} />
+      <SelfSocials selfSubDescriptionDone={selfSubDescriptionDone} setSelfSocialsDone={setSelfSocialsDone} />
+      <MoreArrow selfSocialsDone={selfSocialsDone} />
     </FullSection>
   );
 };
