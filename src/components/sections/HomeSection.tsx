@@ -1,20 +1,20 @@
 import React, { Suspense } from "react";
 import Typist from "react-typist";
-import { FullSection } from "./Components";
-import Link from "./Link";
+import { FullSection } from "../shared/Components";
+import Link from "../shared/Link";
 import "./custom.css";
 // import Logo from "./Logo";
 import { useState } from "react";
 const Zoom = require("react-reveal/Zoom");
 const Fade = require("react-reveal/Fade");
-const Logo = React.lazy(() => import("./Logo"));
+const Logo = React.lazy(() => import("./Home/Logo"));
 
 const HomeSection: React.FC = () => {
   const [selfHeadingDone, setSelfHeadingDone] = useState(false);
   const [selfDescriptionDone, setSelfDescriptionDone] = useState(false);
   const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(false);
   return (
-    <FullSection class="full-section">
+    <FullSection className="full-section">
       <SelfLogo />
       <SelfHeading setSelfHeadingDone={setSelfHeadingDone} />
       <SelfDescription selfHeadingDone={selfHeadingDone} setSelfDescriptionDone={setSelfDescriptionDone} />

@@ -1,24 +1,4 @@
-import { NormalSection, SectionTitle, SectionBody } from "./Components";
-import "./custom.css";
-const AboutSection: React.FC = () => {
-  return (
-    <NormalSection>
-      <SectionTitle>{"<About />"}</SectionTitle>
-      <SectionBody>
-        <FirstParagraph />
-        <br />
-        <SecondParagraph />
-      </SectionBody>
-    </NormalSection>
-  );
-};
-interface ComponentProps {
-  children: React.ReactNode;
-  class?: string;
-}
-const Paragraph: React.FC<ComponentProps> = (props) => {
-  return <p className={`text-lg leading-relaxed text-gray-300 ${props.class}`}>{props.children}</p>;
-};
+import Paragraph from "./OtherComponents";
 
 const FirstParagraph: React.FC = () => {
   return (
@@ -45,15 +25,4 @@ const FirstParagraph: React.FC = () => {
   );
 };
 
-const SecondParagraph: React.FC = () => {
-  return (
-    <>
-      <Paragraph>
-        When I'm not coding, you can find me tutoring Computer Science, playing the guitar, solving Rubik's
-        Cubes, or watching a movie.
-      </Paragraph>
-    </>
-  );
-};
-
-export default AboutSection;
+export default FirstParagraph;

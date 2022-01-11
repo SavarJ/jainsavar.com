@@ -1,4 +1,4 @@
-import Link from "./Link";
+import Link from "../shared/Link";
 const LightSpeed = require("react-reveal/LightSpeed");
 
 const FooterSection: React.FC = () => {

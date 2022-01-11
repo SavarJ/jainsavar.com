@@ -1,11 +1,11 @@
 import "./custom.css";
-import Link from "./Link";
-import { NormalSection, SectionBody, SectionTitle } from "./Components";
+import Link from "../shared/Link";
+import { NormalSection, SectionBody, SectionTitle } from "../shared/Components";
 const ProjectsSection: React.FC = () => {
   return (
     <NormalSection>
-      <SectionTitle class="-mb-4">{"<Projects />"}</SectionTitle>
-      <SectionBody class="flex flex-wrap justify-between -ml-4">
+      <SectionTitle className="-mb-4">{"<Projects />"}</SectionTitle>
+      <SectionBody className="flex flex-wrap justify-between -ml-4">
         <Projects />
         <MoreOnGithub />
       </SectionBody>

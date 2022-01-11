@@ -1,9 +1,9 @@
-import HomeSection from "./HomeSection";
-import AboutSection from "./AboutSection";
-import SkillsSection from "./SkillsSection";
-import ProjectsSection from "./ProjectsSection";
-import FooterSection from "./FooterSection";
-import { MainSection } from "./Components";
+import HomeSection from "./sections/Home/HomeSection";
+import AboutSection from "./sections/About/AboutSection";
+import SkillsSection from "./sections/Skills/SkillsSection";
+import ProjectsSection from "./sections/Projects/ProjectsSection";
+import FooterSection from "./sections/Footer/FooterSection";
+import { MainSection } from "./shared/Components";
 
 const App: React.FC = () => {
   return (

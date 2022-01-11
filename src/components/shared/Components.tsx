@@ -1,7 +1,7 @@
 const Fade = require("react-reveal/Fade");
 interface ComponentProps {
   children: React.ReactNode;
-  class?: string;
+  className?: string;
 }
 const MainSection: React.FC<ComponentProps> = (props) => {
   return (
@@ -11,12 +11,12 @@ const MainSection: React.FC<ComponentProps> = (props) => {
   );
 };
 const FullSection: React.FC<ComponentProps> = (props) => {
-  const className = `text-blue-200 min-h-screen ${props.class}`;
+  const className = `text-blue-200 min-h-screen ${props.className}`;
   return <section className={className}>{props.children}</section>;
 };
 
 const NormalSection: React.FC<ComponentProps> = (props) => {
-  const className = `text-blue-200 ${props.class}`;
+  const className = `text-blue-200 ${props.className}`;
   return (
     <section className={className}>
       <Fade up duration={2000}>
@@ -27,7 +27,7 @@ const NormalSection: React.FC<ComponentProps> = (props) => {
 };
 
 const SectionTitle: React.FC<ComponentProps> = (props) => {
-  const className = `text-5xl text-blue-200 font-bold font-zb ${props.class}`;
+  const className = `text-5xl text-blue-200 font-bold font-zb ${props.className}`;
   return (
     <h1 className={className} style={{ color: "#19B5FE" }}>
       {props.children}
@@ -36,7 +36,7 @@ const SectionTitle: React.FC<ComponentProps> = (props) => {
 };
 
 const SectionBody: React.FC<ComponentProps> = (props) => {
-  const className = `max-w-3xl text-gray-400 mt-8 font-rubik ${props.class}`;
+  const className = `max-w-3xl text-gray-400 mt-8 font-rubik ${props.className}`;
   return <div className={className}>{props.children}</div>;
 };
 
