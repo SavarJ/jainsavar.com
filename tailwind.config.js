@@ -6,8 +6,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        orange: colors.orange,
-        cyan: colors.cyan,
         myblue: "#0b4363",
       },
       spacing: {

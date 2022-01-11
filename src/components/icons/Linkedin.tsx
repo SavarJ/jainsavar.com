@@ -1,4 +1,4 @@
-import IconProps from "../components/shared/IconProps";
+import IconProps from "../shared/IconProps";
 
 const Linkedin: React.FC<IconProps> = (props) => {
   return (

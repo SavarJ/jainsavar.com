@@ -1,0 +1,76 @@
+.icon {
+  transition: transform ease-in 150ms;
+  fill: var(--tw-blue-200);
+}
+
+.icon:hover,
+.icon:focus,
+.icon:active {
+  transform: scale(1.35);
+  fill: var(--gold-one);
+}
+
+.link {
+  position: relative;
+  color: var(--link-color);
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  background-color: var(--link-color);
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: width 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.link::before {
+  left: 0;
+  bottom: 0;
+}
+
+.link::after {
+  right: 0;
+  bottom: 0;
+}
+
+.link:hover::before,
+.link:hover::after {
+  width: 50%;
+}
+
+.link-red {
+  --link-color: red;
+}
+
+.link-blue {
+  --link-color: blue;
+}
+
+.link-green {
+  --link-color: green;
+}
+
+.link-yellow {
+  --link-color: yellow;
+}
+
+.link-gold {
+  --link-color: var(--gold-one);
+  background: var(--link-color);
+  background-clip: text;
+  background: -webkit-linear-gradient(to right, var(--gold-one), var(--gold-two), var(--gold-three));
+  background: -moz-linear-gradient(to right, var(--gold-one), var(--gold-two), var(--gold-three));
+  background: linear-gradient(to right, var(--gold-one), var(--gold-two), var(--gold-three));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link-purple {
+  --link-color: purple;
+}
+
+.link-pink {
+  --link-color: pink;
+}

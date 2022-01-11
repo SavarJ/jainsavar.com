@@ -1,0 +1,23 @@
+.Typist .Cursor--blinking {
+  color: var(--gold-one);
+  opacity: 1;
+  animation: my-blink 1s linear infinite;
+}
+
+@keyframes my-blink {
+  0% {
+    color: var(--gold-two);
+  }
+  100% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes my-blink {
+  0% {
+    color: var(--gold-two);
+  }
+  100% {
+    color: white;
+  }
+}

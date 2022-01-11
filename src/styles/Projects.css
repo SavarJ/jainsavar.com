@@ -1,0 +1,11 @@
+.project {
+  transition: transform ease-in 150ms;
+  outline: 2px dotted var(--my-blue);
+}
+
+.project:hover,
+.project:focus,
+.project:active {
+  transform: translateY(-2.5%);
+  outline: 3px solid var(--my-blue);
+}

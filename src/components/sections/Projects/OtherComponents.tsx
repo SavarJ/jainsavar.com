@@ -1,8 +1,8 @@
 import Link from "../../shared/Link";
 import ComponentProps from "../../shared/ComponentProps";
 import { projectInterface } from "./projectsList";
-import Github from "../../../icons/Github";
-import ExternalLink from "../../../icons/ExternalLink";
+import Github from "../../icons/Github";
+import ExternalLink from "../../icons/ExternalLink";
 
 const ProjectCard: React.FC<ComponentProps> = (props) => {
   return (
@@ -21,7 +21,7 @@ const ProjectCardHead: React.FC<ProjectCardHeadProps> = (props) => {
   return (
     <div>
       <h3 className="font-bold text-2xl text-blue-50">{props.title}</h3>
-      <p className="text-gray-200 py-2 text-base">{props.description}</p>;
+      <p className="text-gray-200 py-2 text-base">{props.description}</p>
     </div>
   );
 };

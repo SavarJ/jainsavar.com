@@ -1,8 +1,8 @@
 import Link from "../../shared/Link";
-import Linkedin from "../../../icons/Linkedin";
-import Github from "../../../icons/Github";
-import Twitter from "../../../icons/Twitter";
-import Email from "../../../icons/Email";
+import Linkedin from "../../icons/Linkedin";
+import Github from "../../icons/Github";
+import Twitter from "../../icons/Twitter";
+import Email from "../../icons/Email";
 const Zoom = require("react-reveal/Zoom");
 
 interface SelfSocialsProps {

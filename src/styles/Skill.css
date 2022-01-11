@@ -1,0 +1,9 @@
+.skill {
+  transition: tranform ease-in 150ms;
+}
+
+.skill:hover,
+.skill:focus,
+.skill:active {
+  transform: translateY(-15%);
+}

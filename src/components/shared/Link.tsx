@@ -1,3 +1,4 @@
+import "../../styles/Link.css";
 interface LinkProps {
   link: string;
   children: React.ReactNode;

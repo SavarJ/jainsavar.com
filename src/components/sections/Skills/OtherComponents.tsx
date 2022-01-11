@@ -1,3 +1,4 @@
+import "../../../styles/Skill.css";
 interface SkillProps {
   name: string;
   className: string;

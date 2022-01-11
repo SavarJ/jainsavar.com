@@ -15,11 +15,11 @@ const SelfSubDescription: React.FC<SelfSubDescriptionProps> = (props) => {
           onTypingDone={() => props.setSelfSubDescription(true)}
         >
           Feel free to check out my{" "}
-          <Link link="/assets/SavarJain-Resume" color="orange">
+          <Link link="/assets/SavarJain-Resume" color="gold">
             resume
           </Link>{" "}
           or email me at{" "}
-          <Link link="mailto:jainsavar@gmail.com" color="orange">
+          <Link link="mailto:jainsavar@gmail.com" color="gold">
             jainsavar@gmail.com
           </Link>
           .

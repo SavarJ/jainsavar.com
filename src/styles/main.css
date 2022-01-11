@@ -1,0 +1,38 @@
+:root {
+  --link-color: transparent;
+  --gold-one: #eadb8a;
+  --gold-two: #b48d4a;
+  --gold-three: #fdf4a1;
+  --my-blue: #0b4363;
+  --tw-blue-200: rgb(191 219 254);
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: linear-gradient(black, var(--my-blue));
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, var(--gold-one), var(--gold-two), var(--gold-three));
+  border-radius: 10px;
+}
+
+.font-inconsolata {
+  font-family: "Inconsolata", monospace;
+}
+
+.font-zb {
+  font-family: "Zilla Slab", serif;
+}
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  pointer-events: none;
+}

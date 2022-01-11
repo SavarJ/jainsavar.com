@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../../styles/Typist.css";
 import FullSection from "../../shared/FullSection";
 import SelfLogo from "./SelfLogo";
 import SelfHeading from "./SelfHeading";
@@ -13,7 +14,10 @@ const HomeSection: React.FC = () => {
   const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(false);
   const [selfSocialsDone, setSelfSocialsDone] = useState(false);
   return (
-    <FullSection className="full-section">
+    // Since there is a padding at the top of the page and
+    // full section has a height of 100vh negative margin is needed
+    // so the other sections below are close enough.
+    <FullSection className="-mb-20">
       <SelfLogo />
       <SelfHeading setSelfHeadingDone={setSelfHeadingDone} />
       <SelfDescription selfHeadingDone={selfHeadingDone} setSelfDescriptionDone={setSelfDescriptionDone} />

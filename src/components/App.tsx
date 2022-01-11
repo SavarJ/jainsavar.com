@@ -5,7 +5,7 @@ import ProjectsSection from "./sections/Projects/ProjectsSection";
 import FooterSection from "./sections/Footer/FooterSection";
 import MainWrapper from "./shared/MainWrapper";
 import SubWrapper from "./shared/SubWrapper";
-import "../styles/custom.css";
+import "../styles/main.css";
 
 const App: React.FC = () => {
   return (

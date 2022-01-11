@@ -1,3 +1,4 @@
+import "../../../styles/Projects.css";
 import { projectsList } from "./projectsList";
 import { ProjectCard, ProjectCardHead, ProjectCardBody } from "./OtherComponents";
 

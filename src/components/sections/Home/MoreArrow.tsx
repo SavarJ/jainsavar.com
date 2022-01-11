@@ -1,3 +1,4 @@
+import "../../../styles/MoreArrow.css";
 const Fade = require("react-reveal/Fade");
 
 interface MoreArrowProps {
