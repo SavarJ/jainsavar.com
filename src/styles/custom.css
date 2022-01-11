@@ -146,13 +146,13 @@ body::-webkit-scrollbar-thumb {
 
 @media (width> 400px) and (height >= 657px) {
   .full-section {
-    @apply -mb-40;
+    @apply -mb-32;
   }
 }
 
 @media (height >= 700px) {
   .full-section {
-    @apply -mb-40;
+    @apply -mb-32;
   }
 }
 img {
@@ -165,11 +165,9 @@ img {
   /* background-color: lightblue; */
 }
 .arrow {
-  width: 50px;
-  height: 50px;
-  transform: rotate(45deg);
   position: absolute;
   left: 50%;
+  transform: translateX(-50%) rotate(45deg);
 }
 .arrow-1 {
   border-right: 2px solid #eee697;
