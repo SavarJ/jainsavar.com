@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-@media (width> 400px) and (height >= 657px) {
+/* @media (width> 400px) and (height >= 657px) {
   .full-section {
     @apply -mb-32;
   }
@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb {
   .full-section {
     @apply -mb-32;
   }
-}
+} */
 img {
   pointer-events: none;
 }

@@ -6,7 +6,7 @@ import SecondParagraph from "./SecondParagraph";
 
 const AboutSection: React.FC = () => {
   return (
-    <NormalSection>
+    <NormalSection id="about" className="pt-8">
       <SectionTitle>{"<About />"}</SectionTitle>
       <SectionBody>
         <FirstParagraph />
