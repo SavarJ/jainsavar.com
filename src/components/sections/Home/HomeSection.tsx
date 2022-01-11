@@ -1,18 +1,17 @@
 import { useState } from "react";
-import { FullSection } from "../../shared/Components";
+import FullSection from "../../shared/FullSection";
 import SelfLogo from "./SelfLogo";
 import SelfHeading from "./SelfHeading";
 import SelfDescription from "./SelfDescription";
 import SelfSubDescription from "./SelfSubDescription";
 import SelfSocials from "./SelfSocials";
-import "./custom.css";
 
 const HomeSection: React.FC = () => {
   const [selfHeadingDone, setSelfHeadingDone] = useState(false);
   const [selfDescriptionDone, setSelfDescriptionDone] = useState(false);
   const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(false);
   return (
-    <FullSection class="full-section">
+    <FullSection className="full-section">
       <SelfLogo />
       <SelfHeading setSelfHeadingDone={setSelfHeadingDone} />
       <SelfDescription selfHeadingDone={selfHeadingDone} setSelfDescriptionDone={setSelfDescriptionDone} />

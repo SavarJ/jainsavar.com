@@ -4,6 +4,7 @@ interface SelfDescriptionProps {
   selfHeadingDone: boolean;
   setSelfDescriptionDone: (value: boolean) => void;
 }
+
 const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
   return (
     <>

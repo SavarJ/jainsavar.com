@@ -1,9 +1,10 @@
+import NormalSection from "../../shared/NormalSection";
+import SectionTitle from "../../shared/SectionTitle";
+import SectionBody from "../../shared/SectionBody";
 import Languages from "./Languages";
 import Frameworks from "./Frameworks";
 import Databases from "./Databases";
 import Tools from "./Tools";
-import { NormalSection, SectionBody, SectionTitle } from "../../shared/Components";
-import "./custom.css";
 
 const SkillsSection: React.FC = () => {
   return (

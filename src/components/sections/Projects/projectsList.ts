@@ -40,4 +40,5 @@ const projectsList: projectInterface[] = [
   },
 ];
 
-export { projectsList, projectInterface };
+export { projectsList };
+export type { projectInterface };

@@ -1,7 +1,9 @@
-import { NormalSection, SectionTitle, SectionBody } from "../../shared/Components";
+import NormalSection from "../../shared/NormalSection";
+import SectionTitle from "../../shared/SectionTitle";
+import SectionBody from "../../shared/SectionBody";
 import FirstParagraph from "./FirstParagraph";
 import SecondParagraph from "./SecondParagraph";
-import "./custom.css";
+
 const AboutSection: React.FC = () => {
   return (
     <NormalSection>

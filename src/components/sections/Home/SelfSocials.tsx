@@ -1,4 +1,5 @@
 import Link from "../../shared/Link";
+import Linkedin from "../../../icons/Linkedin";
 const Zoom = require("react-reveal/Zoom");
 
 interface SelfSocialsProps {
@@ -14,7 +15,7 @@ const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
           <i className="fa fa-github"></i>
         </Link>
         <Link link="https://linkedin.com/in/savarjain">
-          <i className="fa fa-linkedin"></i>
+          <Linkedin />
         </Link>
         <Link link="https://twitter.com/SavarJain">
           <i className="fa fa-twitter"></i>

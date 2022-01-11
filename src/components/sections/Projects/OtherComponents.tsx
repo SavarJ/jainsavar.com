@@ -1,10 +1,6 @@
 import Link from "../../shared/Link";
+import ComponentProps from "../../shared/ComponentProps";
 import { projectInterface } from "./projectsList";
-
-interface ComponentProps {
-  children: React.ReactNode;
-  class?: string;
-}
 
 const ProjectCard: React.FC<ComponentProps> = (props) => {
   return (

@@ -19,12 +19,13 @@
 }
 .icon {
   transition: transform ease-in 150ms;
+  fill: rgb(191 219 254);
 }
 .icon:hover,
 .icon:focus,
 .icon:active {
   transform: scale(1.35);
-  color: #eadb8a;
+  fill: #eadb8a;
 }
 :root {
   --link-color: transparent;

@@ -16,7 +16,7 @@ const FirstParagraph: React.FC = () => {
           className="sm:pl-4 pt-4 w-36 sm:float-right order-3"
         />
         <br className="order-1" />
-        <Paragraph class="order-2">
+        <Paragraph className="order-2">
           I am also a <strong> TA for DSA</strong>. I have a passion for Software Engineering and I am
           currently learning more about <strong>Artificial Intelligence and the Cloud</strong>.
         </Paragraph>

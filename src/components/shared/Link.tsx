@@ -1,4 +1,3 @@
-import "./custom.css";
 interface LinkProps {
   link: string;
   children: React.ReactNode;
