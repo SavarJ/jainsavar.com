@@ -2,13 +2,17 @@ interface LinkProps {
   link: string;
   children: React.ReactNode;
   color?: string;
+  className?: string;
+  sameTab?: boolean;
 }
+
 const Link: React.FC<LinkProps> = (props) => {
+  const style = `${props.color ? `link link-${props.color}` : "icon"} ${props.className}`;
   return (
     <a
-      className={props.color ? `link link-${props.color}` : "icon"}
+      className={style}
       href={props.link}
-      target="_blank"
+      target={props.sameTab ? "_self" : "_blank"}
       rel="noopener noreferrer"
     >
       {props.children}

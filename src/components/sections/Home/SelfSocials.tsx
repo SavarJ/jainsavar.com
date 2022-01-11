@@ -1,5 +1,8 @@
 import Link from "../../shared/Link";
 import Linkedin from "../../../icons/Linkedin";
+import Github from "../../../icons/Github";
+import Twitter from "../../../icons/Twitter";
+import Email from "../../../icons/Email";
 const Zoom = require("react-reveal/Zoom");
 
 interface SelfSocialsProps {
@@ -10,18 +13,18 @@ const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
   /* TODO: Replace font awesome with a custom svg icons */
   return (
     <Zoom top when={props.selfSubDescriptionDone}>
-      <div className="flex justify-between w-32 mt-4">
+      <div className="flex justify-between items-center w-40 mt-4">
         <Link link="https://github.com/SavarJ">
-          <i className="fa fa-github"></i>
+          <Github className="w-5" />
         </Link>
         <Link link="https://linkedin.com/in/savarjain">
-          <Linkedin />
+          <Linkedin className="w-5" />
         </Link>
         <Link link="https://twitter.com/SavarJain">
-          <i className="fa fa-twitter"></i>
+          <Twitter className="w-5" />
         </Link>
         <Link link="mailto:jainsavar@gmail.com">
-          <i className="fa fa-envelope"></i>
+          <Email className="w-5" />
         </Link>
       </div>
     </Zoom>

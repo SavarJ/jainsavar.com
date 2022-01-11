@@ -1,6 +1,8 @@
 import Link from "../../shared/Link";
 import ComponentProps from "../../shared/ComponentProps";
 import { projectInterface } from "./projectsList";
+import Github from "../../../icons/Github";
+import ExternalLink from "../../../icons/ExternalLink";
 
 const ProjectCard: React.FC<ComponentProps> = (props) => {
   return (
@@ -58,11 +60,11 @@ const ProjectCardBodyLinks: React.FC<ProjectCardBodyProps> = ({ project }) => {
   return (
     <div className="flex justify-evenly mt-2">
       <Link link={project.githubLink}>
-        <i className="fa fa-github text-xl"></i>
+        <Github className="w-5" />
       </Link>
       {project.liveLink && (
         <Link link={project.liveLink}>
-          <i className="fas fa-external-link-alt text-xl "></i>
+          <ExternalLink className="w-5" />
         </Link>
       )}
     </div>

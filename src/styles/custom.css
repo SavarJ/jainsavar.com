@@ -149,6 +149,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (height >= 700px) {
+  .full-section {
+    @apply -mb-40;
+  }
+}
 img {
   pointer-events: none;
 }
