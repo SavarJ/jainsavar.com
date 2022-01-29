@@ -11,7 +11,7 @@ const SelfSubDescription: React.FC<SelfSubDescriptionProps> = (props) => {
       {props.selfDescriptionDone && (
         <Typist
           className="text-xl text-gray-400 font-zb"
-          avgTypingDelay={30}
+          avgTypingDelay={20}
           onTypingDone={() => props.setSelfSubDescription(true)}
         >
           Feel free to

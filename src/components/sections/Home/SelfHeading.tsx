@@ -8,8 +8,8 @@ const SelfHeading: React.FC<SelfHeadingProps> = (props) => {
   return (
     <Typist
       className="text-7xl font-inconsolata inline-block"
-      startDelay={1100}
-      avgTypingDelay={120}
+      startDelay={1000}
+      avgTypingDelay={110}
       cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
       onTypingDone={() => props.setSelfHeadingDone(true)}
     >
