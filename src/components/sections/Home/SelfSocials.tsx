@@ -16,16 +16,16 @@ const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
     <Zoom top when={props.selfSubDescriptionDone} onReveal={() => props.setSelfSocialsDone(true)}>
       <div className="flex justify-between items-center w-40 mt-4">
         <Link link="https://github.com/SavarJ">
-          <Github className="w-5" />
+          <Github className="w-5 pb-1 border-b-2 border-blue-200 border-dotted" />
         </Link>
         <Link link="https://linkedin.com/in/savarjain">
-          <Linkedin className="w-5" />
+          <Linkedin className="w-5 pb-1 border-b-2 border-blue-200 border-dotted" />
         </Link>
-        <Link link="https://twitter.com/SavarJain">
+        {/* <Link link="https://twitter.com/SavarJain">
           <Twitter className="w-5" />
-        </Link>
+        </Link> */}
         <Link link="mailto:jainsavar@gmail.com">
-          <Email className="w-5" />
+          <Email className="w-5 pb-1 border-b-2 border-blue-200 border-dotted" />
         </Link>
       </div>
     </Zoom>
