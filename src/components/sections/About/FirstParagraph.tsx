@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Paragraph from "./OtherComponents";
 
 const FirstParagraph: React.FC = () => {
@@ -5,9 +6,10 @@ const FirstParagraph: React.FC = () => {
     <>
       <img src="/coding.png" alt="Coding-img" className="pr-8 pb-4 w-36 sm:float-left" />
       <Paragraph>
-        Hello! I'm Savar Jain, currently a senior at Westhill High School (CT) . I have been programming for
-        about <strong>3.5 years</strong> and have taken many Computer Science classes such as{" "}
-        <strong>Data Structures & Algorithms</strong>, Cyber Security and AP CSA.
+        Hello! I'm Savar Jain, currently an undergraduate student majoring in Computer Science @ University of
+        Connecticut. I have been programming for about <NumberOfYearsOfProgramming /> and have taken many
+        Computer Science classes such as <strong>Data Structures & Algorithms</strong>, Cyber Security and AP
+        CSA.
       </Paragraph>
       <div className="flex flex-col sm:block">
         <img
@@ -22,6 +24,23 @@ const FirstParagraph: React.FC = () => {
         </Paragraph>
       </div>
     </>
+  );
+};
+
+const NumberOfYearsOfProgramming: React.FC = () => {
+  const [years, setYears] = useState(() => {
+    const startDate = new Date("2018-05-01");
+    const currentDate = new Date();
+    const diff = currentDate.getTime() - startDate.getTime();
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const years = days / 365;
+    return Math.round(years * 100) / 100;
+  });
+
+  return (
+    <span>
+      <strong>{years} years</strong>
+    </span>
   );
 };
 
