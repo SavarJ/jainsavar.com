@@ -2,7 +2,6 @@ import NormalSection from "../../shared/NormalSection";
 import SectionTitle from "../../shared/SectionTitle";
 import SectionBody from "../../shared/SectionBody";
 import Experiences from "./Experiences";
-import MoreOnGithub from "./MoreOnGithub";
 
 const ExperienceSection: React.FC = () => {
   return (

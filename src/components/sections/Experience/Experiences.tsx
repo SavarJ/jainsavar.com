@@ -7,7 +7,7 @@ const Experiences: React.FC = () => {
     <>
       {experiencesList.map((experience, index) => (
         <ExperienceCard key={index}>
-          <ExperienceCardHead title={experience.title} description={experience.description} />
+          <ExperienceCardHead experience={experience} />
           <ExperienceCardBody experience={experience} />
         </ExperienceCard>
       ))}
