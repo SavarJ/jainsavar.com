@@ -19,14 +19,11 @@ const experiencesList: experienceInterface[] = [
     languages: [
       "Next.js",
       "React.js",
-      "Redux",
+      "Redux.js",
       "TypeScript",
       "JavaScript",
       "Python",
       "Amazon Web Services (AWS)",
-      "Amazon DynamoDB",
-      "Amazon Cognito",
-      "Amazon ...",
     ],
   },
   {

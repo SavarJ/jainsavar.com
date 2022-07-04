@@ -5,7 +5,7 @@ import { experienceInterface } from "./experiencesList";
 
 const ExperienceCard: React.FC<ComponentProps> = (props) => {
   return (
-    <div className="rounded-lg p-6 shadow-xl max-w-88 md:w-88 h-68 m-4 flex flex-col justify-between hover:shadow-4xl relative project">
+    <div className="rounded-lg p-6 shadow-xl h-68 m-4 flex flex-col justify-between hover:shadow-4xl relative project">
       {props.children}
     </div>
   );
