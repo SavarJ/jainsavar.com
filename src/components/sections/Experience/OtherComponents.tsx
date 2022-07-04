@@ -1,10 +1,9 @@
-import Link from "../../shared/Link";
+// import Link from "../../shared/Link";
 import ComponentProps from "../../shared/ComponentProps";
-import { projectInterface } from "./projectsList";
-import Github from "../../icons/Github";
-import ExternalLink from "../../icons/ExternalLink";
+import { experienceInterface } from "./experiencesList";
+// import ExternalLink from "../../icons/ExternalLink";
 
-const ProjectCard: React.FC<ComponentProps> = (props) => {
+const ExperienceCard: React.FC<ComponentProps> = (props) => {
   return (
     <div className="rounded-lg p-6 shadow-xl max-w-88 md:w-88 h-68 m-4 flex flex-col justify-between hover:shadow-4xl relative project">
       {props.children}
@@ -12,12 +11,12 @@ const ProjectCard: React.FC<ComponentProps> = (props) => {
   );
 };
 
-interface ProjectCardHeadProps {
+interface ExperienceCardHeadProps {
   title: string;
   description: string;
 }
 
-const ProjectCardHead: React.FC<ProjectCardHeadProps> = (props) => {
+const ExperienceCardHead: React.FC<ExperienceCardHeadProps> = (props) => {
   return (
     <div>
       <h3 className="font-bold text-2xl text-blue-50">{props.title}</h3>
@@ -26,23 +25,23 @@ const ProjectCardHead: React.FC<ProjectCardHeadProps> = (props) => {
   );
 };
 
-interface ProjectCardBodyProps {
-  project: projectInterface;
+interface ExperienceCardBodyProps {
+  experience: experienceInterface;
 }
 
-const ProjectCardBody: React.FC<ProjectCardBodyProps> = (props) => {
+const ExperienceCardBody: React.FC<ExperienceCardBodyProps> = (props) => {
   return (
     <div>
-      <ProjectCardBodyLanguages project={props.project} />
-      <ProjectCardBodyLinks project={props.project} />
+      <ExperienceCardBodyLanguages experience={props.experience} />
+      {/* <ExperienceCardBodyLinks experience={props.experience} /> */}
     </div>
   );
 };
 
-const ProjectCardBodyLanguages: React.FC<ProjectCardBodyProps> = ({ project }) => {
+const ExperienceCardBodyLanguages: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
   return (
     <p className="text-gray-400 italic text-sm">
-      {project.languages.map((language, index) => {
+      {experience.languages.map((language, index) => {
         return (
           <span
             key={index}
@@ -56,19 +55,19 @@ const ProjectCardBodyLanguages: React.FC<ProjectCardBodyProps> = ({ project }) =
   );
 };
 
-const ProjectCardBodyLinks: React.FC<ProjectCardBodyProps> = ({ project }) => {
-  return (
-    <div className="flex justify-evenly mt-2">
-      <Link link={project.githubLink}>
-        <Github className="w-5" />
-      </Link>
-      {project.liveLink && (
-        <Link link={project.liveLink}>
-          <ExternalLink className="w-5" />
-        </Link>
-      )}
-    </div>
-  );
-};
+// const ExperienceCardBodyLinks: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
+//   return (
+//     <div className="flex justify-evenly mt-2">
+//       <Link link={experience.githubLink}>
+//         <Github className="w-5" />
+//       </Link>
+//       {experience.liveLink && (
+//         <Link link={project.liveLink}>
+//           <ExternalLink className="w-5" />
+//         </Link>
+//       )}
+//     </div>
+//   );
+// };
 
-export { ProjectCard, ProjectCardHead, ProjectCardBody };
+export { ExperienceCard, ExperienceCardHead, ExperienceCardBody };

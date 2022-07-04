@@ -1,15 +1,15 @@
 import "../../../styles/Projects.css";
-import { projectsList } from "./projectsList";
-import { ProjectCard, ProjectCardHead, ProjectCardBody } from "./OtherComponents";
+import { experiencesList } from "./experiencesList";
+import { ExperienceCard, ExperienceCardHead, ExperienceCardBody } from "./OtherComponents";
 
 const Experiences: React.FC = () => {
   return (
     <>
-      {projectsList.map((project, index) => (
-        <ProjectCard key={index}>
-          <ProjectCardHead title={project.title} description={project.description} />
-          <ProjectCardBody project={project} />
-        </ProjectCard>
+      {experiencesList.map((experience, index) => (
+        <ExperienceCard key={index}>
+          <ExperienceCardHead title={experience.title} description={experience.description} />
+          <ExperienceCardBody experience={experience} />
+        </ExperienceCard>
       ))}
     </>
   );

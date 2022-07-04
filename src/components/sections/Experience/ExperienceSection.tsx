@@ -10,7 +10,6 @@ const ExperienceSection: React.FC = () => {
       <SectionTitle className="-mb-4">{"<Experience />"}</SectionTitle>
       <SectionBody className="flex flex-wrap justify-between -ml-4">
         <Experiences />
-        <MoreOnGithub />
       </SectionBody>
     </NormalSection>
   );
