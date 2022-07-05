@@ -1,102 +1,118 @@
+const LanguageStyle: string = "bg-blue-800 text-white border-blue-400";
+const FrameworkStyle = "bg-yellow-800 text-white border-yellow-400";
+const DatabaseStyle = "bg-green-800 text-white border-green-400";
+const ToolStyle = "bg-pink-800 text-white border-pink-400";
+interface SkillStoreItem {
+  value: string;
+  style: string;
+}
+
 const SkillStore = {
-  Language: {
-    style: "bg-blue-800 text-white border-blue-400",
-    items: {
-      Javascript: {
-        value: "JavaScript",
-      },
-      Typescript: {
-        value: "TypeScript",
-      },
-      Java: {
-        value: "Java",
-      },
-      Python: {
-        value: "Python",
-      },
-      HTMLCSS: {
-        value: "HTML/CSS",
-      },
-    },
+  Javascript: {
+    value: "JavaScript",
+    style: LanguageStyle,
   },
-  Framework: {
-    style: "bg-yellow-600 text-white border-yellow-400",
-    items: {
-      React: {
-        value: "React.js",
-      },
-      Node: {
-        value: "Node.js",
-      },
-      Express: {
-        value: "Express.js",
-      },
-      EJS: {
-        value: "EJS",
-      },
-      Flask: {
-        value: "Flask",
-      },
-      Bootstrap: {
-        value: "Bootstrap",
-      },
-      TailwindCSS: {
-        value: "Tailwind CSS",
-      },
-      Next: {
-        value: "Next.js",
-      },
-      Redux: {
-        value: "Redux.js",
-      },
-    },
+  Typescript: {
+    value: "TypeScript",
+    style: LanguageStyle,
   },
-  Database: {
-    style: "bg-green-800 text-white border-green-400",
-    items: {
-      Mongo: {
-        value: "MongoDB",
-      },
-      Datastore: {
-        value: "Google Cloud Datastore",
-      },
-      Postgres: {
-        value: "Postgres SQL",
-      },
-      Dynamo: {
-        value: "Amazon DynamoDB",
-      },
-    },
+  Java: {
+    value: "Java",
+    style: LanguageStyle,
   },
-  Tool: {
-    style: "bg-pink-800 text-white border-pink-400",
-    items: {
-      Atlas: {
-        value: "MongoDB Atlas",
-      },
-      Firebase: {
-        value: "Google Firebase",
-      },
-      Heroku: {
-        value: "Heroku",
-      },
-      GitGithub: {
-        value: "Git/GitHub",
-      },
-      Terminal: {
-        value: "Unix/Linux Terminal",
-      },
-      GCP: {
-        value: "Google Cloud Platform (GCP)",
-      },
-      AWS: {
-        value: "Amazon Web Services (AWS)",
-      },
-      Azure: {
-        value: "Microsoft Azure",
-      },
-    },
+  Python: {
+    value: "Python",
+    style: LanguageStyle,
+  },
+  HTMLCSS: {
+    value: "HTML/CSS",
+    style: LanguageStyle,
+  },
+  React: {
+    value: "React.js",
+    style: FrameworkStyle,
+  },
+  Node: {
+    value: "Node.js",
+    style: FrameworkStyle,
+  },
+  Express: {
+    value: "Express.js",
+    style: FrameworkStyle,
+  },
+  EJS: {
+    value: "EJS",
+    style: FrameworkStyle,
+  },
+  Flask: {
+    value: "Flask",
+    style: FrameworkStyle,
+  },
+  Bootstrap: {
+    value: "Bootstrap",
+    style: FrameworkStyle,
+  },
+  TailwindCSS: {
+    value: "Tailwind CSS",
+    style: FrameworkStyle,
+  },
+  Next: {
+    value: "Next.js",
+    style: FrameworkStyle,
+  },
+  Redux: {
+    value: "Redux.js",
+    style: FrameworkStyle,
+  },
+  Mongo: {
+    value: "MongoDB",
+    style: DatabaseStyle,
+  },
+  Datastore: {
+    value: "Google Cloud Datastore",
+    style: DatabaseStyle,
+  },
+  Postgres: {
+    value: "Postgres SQL",
+    style: DatabaseStyle,
+  },
+  Dynamo: {
+    value: "Amazon DynamoDB",
+    style: DatabaseStyle,
+  },
+  Atlas: {
+    value: "MongoDB Atlas",
+    style: ToolStyle,
+  },
+  Firebase: {
+    value: "Google Firebase",
+    style: ToolStyle,
+  },
+  Heroku: {
+    value: "Heroku",
+    style: ToolStyle,
+  },
+  GitGithub: {
+    value: "Git/GitHub",
+    style: ToolStyle,
+  },
+  Terminal: {
+    value: "Unix/Linux Terminal",
+    style: ToolStyle,
+  },
+  GCP: {
+    value: "Google Cloud Platform (GCP)",
+    style: ToolStyle,
+  },
+  AWS: {
+    value: "Amazon Web Services (AWS)",
+    style: ToolStyle,
+  },
+  Azure: {
+    value: "Microsoft Azure",
+    style: ToolStyle,
   },
 };
 
 export { SkillStore };
+export type { SkillStoreItem };
