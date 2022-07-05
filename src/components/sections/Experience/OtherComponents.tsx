@@ -1,8 +1,6 @@
-// import Link from "../../shared/Link";
 import ComponentProps from "../../shared/ComponentProps";
-import { Language } from "../Skills/skillsList";
+import { CardBodyLanguages } from "./CardBodyLanguages";
 import { experienceInterface } from "./experiencesList";
-// import ExternalLink from "../../icons/ExternalLink";
 
 const ExperienceCard: React.FC<ComponentProps> = (props) => {
   return (
@@ -47,35 +45,14 @@ const ExperienceCardHead: React.FC<ExperienceCardBodyProps> = ({ experience }) =
   );
 };
 
-const ExperienceCardBody: React.FC<ExperienceCardBodyProps> = (props) => {
-  const languages = [Language.Javascript];
+const ExperienceCardBody: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
   return (
     <div>
-      <ExperienceCardBodyLanguages experience={props.experience} />
-      <span
-        className={`inline-block ${languages[0].style} rounded-full px-3 py-1 mr-2 mb-2 font-inconsolata tracking-wide`}
-      >
-        {languages[0].value}
-      </span>
+      <CardBodyLanguages experience={experience} />
     </div>
   );
 };
 
-const ExperienceCardBodyLanguages: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
-  return (
-    <p className="text-gray-400 italic text-sm">
-      {experience.languages.map((language, index) => {
-        return (
-          <span
-            key={index}
-            className="inline-block bg-gray-800 text-white rounded-full px-3 py-1 mr-2 mb-2 font-inconsolata tracking-wide"
-          >
-            {language}
-          </span>
-        );
-      })}
-    </p>
-  );
-};
-
 export { ExperienceCard, ExperienceCardHead, ExperienceCardBody };
+
+export type { ExperienceCardBodyProps };
