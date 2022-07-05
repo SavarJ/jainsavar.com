@@ -22,6 +22,7 @@ const projectsList: projectInterface[] = [
       SkillStore.EJS,
       SkillStore.Tailwind,
       SkillStore.Javascript,
+      SkillStore.Heroku,
     ],
   },
   {
@@ -30,7 +31,14 @@ const projectsList: projectInterface[] = [
       "A fully responsive todolist web application with CRUD (Create, read, update, delete) functionalities. You can also create multiple todolists and add tasks to them.",
     githubLink: "https://github.com/SavarJ/todolist",
     liveLink: "https://savarj-todolist.herokuapp.com/",
-    skills: [SkillStore.HTMLCSS, SkillStore.Node, SkillStore.Express, SkillStore.EJS, SkillStore.Mongo],
+    skills: [
+      SkillStore.HTMLCSS,
+      SkillStore.Node,
+      SkillStore.Express,
+      SkillStore.EJS,
+      SkillStore.Mongo,
+      SkillStore.Heroku,
+    ],
   },
   {
     title: "Simon's Game",
