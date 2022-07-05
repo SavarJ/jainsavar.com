@@ -1,3 +1,4 @@
+import { SkillStore, SkillStoreItem } from "../Skills/SkillStore";
 interface experienceInterface {
   company: string;
   title: string;
@@ -5,7 +6,7 @@ interface experienceInterface {
   endDate: Date;
   location?: string;
   description: string[];
-  languages: string[];
+  skills: SkillStoreItem[];
 }
 
 const experiencesList: experienceInterface[] = [
@@ -17,14 +18,16 @@ const experiencesList: experienceInterface[] = [
     description: [
       "A full stack web application that auto grades programming labs that are assigned to students and displays extensive submission details to the teachers.",
     ],
-    languages: [
-      "Next.js",
-      "React.js",
-      "Redux.js",
-      "TypeScript",
-      "JavaScript",
-      "Python",
-      "Amazon Web Services (AWS)",
+    skills: [
+      SkillStore.Typescript,
+      SkillStore.Javascript,
+      SkillStore.Python,
+      SkillStore.Next,
+      SkillStore.Redux,
+      SkillStore.React,
+      SkillStore.Node,
+      SkillStore.GitGithub,
+      SkillStore.AWS,
     ],
   },
   {
@@ -35,7 +38,15 @@ const experiencesList: experienceInterface[] = [
     description: [
       "A fully responsive todolist web application with CRUD (Create, read, update, delete) functionalities. You can also create multiple todolists and add tasks to them.",
     ],
-    languages: ["React.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "Microsoft Azure"],
+    skills: [
+      SkillStore.Typescript,
+      SkillStore.React,
+      SkillStore.Node,
+      SkillStore.Express,
+      SkillStore.Postgres,
+      SkillStore.GitGithub,
+      SkillStore.Azure,
+    ],
   },
   {
     company: "Computer Science Academy of Westhill",
@@ -45,7 +56,7 @@ const experiencesList: experienceInterface[] = [
     description: [
       "Implemented my version of the popular Simons game in which users can play using keyboard arrows or by clicking the sqaures.",
     ],
-    languages: ["Java"],
+    skills: [SkillStore.Java, SkillStore.GitGithub],
   },
   {
     company: "University of Connecticut",
@@ -55,7 +66,7 @@ const experiencesList: experienceInterface[] = [
     description: [
       "Programmed a script that will read recipients’ email addresses from a csv file and send emails to them.",
     ],
-    languages: ["Python", "Flask", "Google Cloud Platform (GCP)"],
+    skills: [SkillStore.Python, SkillStore.Flask, SkillStore.GitGithub, SkillStore.Datastore, SkillStore.GCP],
   },
 ];
 
