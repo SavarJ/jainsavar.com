@@ -1,5 +1,5 @@
 import ComponentProps from "../../shared/ComponentProps";
-import { CardBodyLanguages } from "./CardBodyLanguages";
+import { CardBodySkills } from "./CardBodySkills";
 import { experienceInterface } from "./experiencesList";
 
 const ExperienceCard: React.FC<ComponentProps> = (props) => {
@@ -48,7 +48,7 @@ const ExperienceCardHead: React.FC<ExperienceCardBodyProps> = ({ experience }) =
 const ExperienceCardBody: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
   return (
     <div>
-      <CardBodyLanguages experience={experience} />
+      <CardBodySkills skills={experience.skills} />
     </div>
   );
 };
