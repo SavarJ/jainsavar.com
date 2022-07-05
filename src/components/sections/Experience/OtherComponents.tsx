@@ -1,5 +1,6 @@
 // import Link from "../../shared/Link";
 import ComponentProps from "../../shared/ComponentProps";
+import { Language } from "../Skills/skillsList";
 import { experienceInterface } from "./experiencesList";
 // import ExternalLink from "../../icons/ExternalLink";
 
@@ -16,10 +17,6 @@ interface ExperienceCardBodyProps {
 }
 
 const ExperienceCardHead: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
-  const dateOptions = {
-    year: "numeric",
-    month: "short",
-  };
   return (
     <>
       <div className="flex justify-between">
@@ -51,9 +48,15 @@ const ExperienceCardHead: React.FC<ExperienceCardBodyProps> = ({ experience }) =
 };
 
 const ExperienceCardBody: React.FC<ExperienceCardBodyProps> = (props) => {
+  const languages = [Language.Javascript];
   return (
     <div>
       <ExperienceCardBodyLanguages experience={props.experience} />
+      <span
+        className={`inline-block ${languages[0].style} rounded-full px-3 py-1 mr-2 mb-2 font-inconsolata tracking-wide`}
+      >
+        {languages[0].value}
+      </span>
     </div>
   );
 };
