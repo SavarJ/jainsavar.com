@@ -2,6 +2,8 @@ const LanguageStyle: string = "bg-blue-800 text-white border-blue-400";
 const FrameworkStyle = "bg-yellow-800 text-white border-yellow-400";
 const DatabaseStyle = "bg-green-800 text-white border-green-400";
 const ToolStyle = "bg-pink-800 text-white border-pink-400";
+const OtherStyle = "bg-gray-400 text-white border-blue-400";
+
 interface SkillStoreItem {
   value: string;
   style: string;
@@ -111,6 +113,10 @@ const SkillStore = {
   Azure: {
     value: "Microsoft Azure",
     style: ToolStyle,
+  },
+  More: {
+    value: "More coming soon...",
+    style: OtherStyle,
   },
 };
 
