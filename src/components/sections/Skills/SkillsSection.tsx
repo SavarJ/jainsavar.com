@@ -2,7 +2,7 @@ import NormalSection from "../../shared/NormalSection";
 import SectionTitle from "../../shared/SectionTitle";
 import SectionBody from "../../shared/SectionBody";
 import { SkillStore } from "./SkillStore";
-import { Skill } from "./OtherComponents";
+import { Skill } from "./Skill";
 
 const SkillsSection: React.FC = () => {
   return (
