@@ -15,6 +15,10 @@ const Credits: React.FC = () => {
       <Link link="https://tailwindcss.com" color="gold">
         TailwindCSS
       </Link>
+      . Hosted on{" "}
+      <Link link="https://firebase.google.com/" color="gold">
+        Firebase{" "}
+      </Link>
       . Inspired by{" "}
       <Link link="https://shannonlau.com" color="gold">
         Shannon Lau
