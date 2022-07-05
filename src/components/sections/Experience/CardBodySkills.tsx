@@ -1,9 +1,13 @@
-import { ExperienceCardBodyProps } from "./OtherComponents";
+import { SkillStoreItem } from "../Skills/SkillStore";
 
-const CardBodyLanguages: React.FC<ExperienceCardBodyProps> = ({ experience }) => {
+interface CardBodySkillsInterface {
+  skills: SkillStoreItem[];
+}
+
+const CardBodySkills: React.FC<CardBodySkillsInterface> = ({ skills }) => {
   return (
     <p className="text-gray-400 italic text-sm">
-      {experience.skills.map((skill, index) => {
+      {skills.map((skill, index) => {
         return (
           <span
             key={index}
@@ -17,4 +21,4 @@ const CardBodyLanguages: React.FC<ExperienceCardBodyProps> = ({ experience }) =>
   );
 };
 
-export { CardBodyLanguages };
+export { CardBodySkills };
