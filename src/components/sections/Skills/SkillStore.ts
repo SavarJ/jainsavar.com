@@ -52,7 +52,7 @@ const SkillStore = {
     value: "Bootstrap",
     style: FrameworkStyle,
   },
-  TailwindCSS: {
+  Tailwind: {
     value: "Tailwind CSS",
     style: FrameworkStyle,
   },
@@ -65,7 +65,7 @@ const SkillStore = {
     style: FrameworkStyle,
   },
   Mongo: {
-    value: "MongoDB",
+    value: "MongoDB (NoSQL)",
     style: DatabaseStyle,
   },
   Datastore: {
