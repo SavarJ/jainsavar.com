@@ -16,6 +16,8 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
           onTypingDone={() => props.setSelfDescriptionDone(true)}
         >
           I'm a undergraduate student who's passionate about Computer Science.
+          <br />
+          Graduating in 2025.
         </Typist>
       )}
     </>
