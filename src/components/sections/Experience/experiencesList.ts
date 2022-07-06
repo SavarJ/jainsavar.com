@@ -16,7 +16,10 @@ const experiencesList: experienceInterface[] = [
     startDate: new Date("2022-06-02"),
     endDate: new Date("2022-08-25"),
     description: [
-      "A full stack web application that auto grades programming labs that are assigned to students and displays extensive submission details to the teachers.",
+      "Implement payment processing system by leveraging Stripe’s API and integrate with the platform",
+      "Improve site-wide performanceby 60% by migrating the old codebase",
+      "Redesign backend architecture to reduce monthly costs by 80% by shifting to AWS Lambda",
+      "Develop AWS services (Cognito, CDK, DynamoDB) by working alongside the Tech Lead",
     ],
     skills: [
       SkillStore.Typescript,
@@ -36,7 +39,9 @@ const experiencesList: experienceInterface[] = [
     startDate: new Date("2022-05-02"),
     endDate: new Date("2022-06-25"),
     description: [
-      "A fully responsive todolist web application with CRUD (Create, read, update, delete) functionalities. You can also create multiple todolists and add tasks to them.",
+      "Implemented an API to store and retrieve events using Microsoft PostgreSQL Database",
+      "Developed a newsletter signup page using Mailchimp’s API to increase traffic by 27%",
+      "Engineered build/release pipelines in Microsoft Azure DevOps to automate deployments",
     ],
     skills: [
       SkillStore.Typescript,
@@ -54,7 +59,7 @@ const experiencesList: experienceInterface[] = [
     startDate: new Date("2021-08-02"),
     endDate: new Date("2022-05-25"),
     description: [
-      "Implemented my version of the popular Simons game in which users can play using keyboard arrows or by clicking the sqaures.",
+      "Helped professor teach 45+ students by evaluating exams, answering questions, and occasionally instructing lectures",
     ],
     skills: [SkillStore.Java, SkillStore.GitGithub],
   },
@@ -64,7 +69,7 @@ const experiencesList: experienceInterface[] = [
     startDate: new Date("2021-06-02"),
     endDate: new Date("2021-08-25"),
     description: [
-      "Programmed a script that will read recipients’ email addresses from a csv file and send emails to them.",
+      "Built a full stack web application that translated classroom emails to the selected language and sent them to students as part of a 6-week summer program",
     ],
     skills: [SkillStore.Python, SkillStore.Flask, SkillStore.GitGithub, SkillStore.Datastore, SkillStore.GCP],
   },
