@@ -18,8 +18,8 @@ const ExperienceCardHead: React.FC<ExperienceCardBodyProps> = ({ experience }) =
   return (
     <>
       <div className="flex justify-between">
-        <h3 className="font-bold text-xl text-blue-50">{experience.title}</h3>
-        <h2>
+        <h3 className="font-bold text-lg md:text-xl text-blue-50">{experience.title}</h3>
+        <h2 className="text-xs md:text-base">
           {experience.startDate.toLocaleDateString("en-US", {
             year: "numeric",
             month: "short",
@@ -34,11 +34,11 @@ const ExperienceCardHead: React.FC<ExperienceCardBodyProps> = ({ experience }) =
         </h2>
       </div>
       <div>
-        <h3 className="font-medium text-lg text-blue-200">{experience.company}</h3>
+        <h3 className="font-medium md:text-lg text-blue-200">{experience.company}</h3>
       </div>
-      <ul className="list-disc">
+      <ul className="list-disc mb-2">
         {experience.description.map((line) => (
-          <li className="text-gray-200 ml-4 py-2 text-sm">{line}</li>
+          <li className="text-gray-200 ml-4 py-1 text-sm">{line}</li>
         ))}
       </ul>
     </>
