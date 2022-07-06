@@ -10,20 +10,20 @@ interface SkillStoreItem {
 }
 
 const SkillStore = {
-  Javascript: {
-    value: "JavaScript",
-    style: LanguageStyle,
-  },
   Typescript: {
     value: "TypeScript",
     style: LanguageStyle,
   },
-  Java: {
-    value: "Java",
+  Javascript: {
+    value: "JavaScript",
     style: LanguageStyle,
   },
   Python: {
     value: "Python",
+    style: LanguageStyle,
+  },
+  Java: {
+    value: "Java",
     style: LanguageStyle,
   },
   HTMLCSS: {
@@ -42,6 +42,14 @@ const SkillStore = {
     value: "Express.js",
     style: FrameworkStyle,
   },
+  Next: {
+    value: "Next.js",
+    style: FrameworkStyle,
+  },
+  Redux: {
+    value: "Redux.js",
+    style: FrameworkStyle,
+  },
   EJS: {
     value: "EJS",
     style: FrameworkStyle,
@@ -58,20 +66,8 @@ const SkillStore = {
     value: "Tailwind CSS",
     style: FrameworkStyle,
   },
-  Next: {
-    value: "Next.js",
-    style: FrameworkStyle,
-  },
-  Redux: {
-    value: "Redux.js",
-    style: FrameworkStyle,
-  },
   Mongo: {
     value: "MongoDB (NoSQL)",
-    style: DatabaseStyle,
-  },
-  Datastore: {
-    value: "Google Cloud Datastore",
     style: DatabaseStyle,
   },
   Postgres: {
@@ -82,16 +78,32 @@ const SkillStore = {
     value: "Amazon DynamoDB",
     style: DatabaseStyle,
   },
-  Atlas: {
-    value: "MongoDB Atlas",
+  Datastore: {
+    value: "Google Cloud Datastore",
+    style: DatabaseStyle,
+  },
+  AWS: {
+    value: "Amazon Web Services (AWS)",
+    style: ToolStyle,
+  },
+  Azure: {
+    value: "Microsoft Azure",
+    style: ToolStyle,
+  },
+  GCP: {
+    value: "Google Cloud Platform (GCP)",
+    style: ToolStyle,
+  },
+  Heroku: {
+    value: "Heroku",
     style: ToolStyle,
   },
   Firebase: {
     value: "Google Firebase",
     style: ToolStyle,
   },
-  Heroku: {
-    value: "Heroku",
+  Atlas: {
+    value: "MongoDB Atlas",
     style: ToolStyle,
   },
   GitGithub: {
@@ -100,18 +112,6 @@ const SkillStore = {
   },
   Terminal: {
     value: "Unix/Linux Terminal",
-    style: ToolStyle,
-  },
-  GCP: {
-    value: "Google Cloud Platform (GCP)",
-    style: ToolStyle,
-  },
-  AWS: {
-    value: "Amazon Web Services (AWS)",
-    style: ToolStyle,
-  },
-  Azure: {
-    value: "Microsoft Azure",
     style: ToolStyle,
   },
   More: {
