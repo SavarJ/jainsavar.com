@@ -17,7 +17,7 @@ const experiencesList: experienceInterface[] = [
     endDate: new Date("2022-08-25"),
     description: [
       "Implement payment processing system by leveraging Stripe’s API and integrate with the platform",
-      "Improve site-wide performanceby 60% by migrating the old codebase",
+      "Improve site-wide performance by 60% by migrating the old codebase",
       "Redesign backend architecture to reduce monthly costs by 80% by shifting to AWS Lambda",
       "Develop AWS services (Cognito, CDK, DynamoDB) by working alongside the Tech Lead",
     ],
@@ -41,7 +41,7 @@ const experiencesList: experienceInterface[] = [
     description: [
       "Implemented an API to store and retrieve events using Microsoft PostgreSQL Database",
       "Developed a newsletter signup page using Mailchimp’s API to increase traffic by 27%",
-      "Engineered build/release pipelines in Microsoft Azure DevOps to automate deployments",
+      "Engineered CI/CD build/release pipelines in Microsoft Azure DevOps to automate deployments",
     ],
     skills: [
       SkillStore.Typescript,
