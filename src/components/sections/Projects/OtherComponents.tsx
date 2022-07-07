@@ -16,8 +16,8 @@ const ProjectCard: React.FC<ComponentProps> = (props) => {
 const ProjectCardHead: React.FC<ProjectCardBodyProps> = ({ project }) => {
   return (
     <div>
-      <h3 className="font-bold text-2xl text-blue-50">{project.title}</h3>
-      <p className="text-gray-200 py-2 text-base">{project.description}</p>
+      <h3 className="font-bold text-xl text-blue-50">{project.title}</h3>
+      <p className="text-gray-200 py-2 text-sm">{project.description}</p>
     </div>
   );
 };
