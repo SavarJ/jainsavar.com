@@ -14,9 +14,9 @@ const App: React.FC = () => {
       <HomeSection />
       <SubWrapper>
         <AboutSection />
-        <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <SkillsSection />
         <FooterSection />
       </SubWrapper>
     </MainWrapper>
