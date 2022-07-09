@@ -7,8 +7,10 @@ const FirstParagraph: React.FC = () => {
       <img src="/coding.png" alt="Coding-img" className="pr-8 pb-4 w-36 sm:float-left" />
       <Paragraph>
         Hello! I'm Savar Jain, currently an undergraduate student majoring in Computer Science @ University of
-        Connecticut. I have been programming for about <NumberOfYearsOfProgramming />. Last year, I was a TA
-        for <strong>Data Structures & Algorithms</strong>.
+        Connecticut. I have been programming for about <NumberOfYearsOfProgramming />. Currently I am
+        interning at Headstarter, where I'm working full stack engineer.
+        {/* Last year, I was a TA for{" "}
+        <strong>Data Structures & Algorithms</strong>. */}
       </Paragraph>
       <div className="flex flex-col sm:block">
         <img
