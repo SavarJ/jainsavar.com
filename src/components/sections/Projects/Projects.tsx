@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
     <>
       {projectsList.map((project, index) => (
         <ProjectCard key={index}>
-          <ProjectCardHead title={project.title} description={project.description} />
+          <ProjectCardHead project={project} />
           <ProjectCardBody project={project} />
         </ProjectCard>
       ))}

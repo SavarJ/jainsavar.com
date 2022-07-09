@@ -6,6 +6,7 @@ import FooterSection from "./sections/Footer/FooterSection";
 import MainWrapper from "./shared/MainWrapper";
 import SubWrapper from "./shared/SubWrapper";
 import "../styles/main.css";
+import ExperienceSection from "./sections/Experience/ExperienceSection";
 
 const App: React.FC = () => {
   return (
@@ -13,8 +14,9 @@ const App: React.FC = () => {
       <HomeSection />
       <SubWrapper>
         <AboutSection />
-        <SkillsSection />
+        <ExperienceSection />
         <ProjectsSection />
+        <SkillsSection />
         <FooterSection />
       </SubWrapper>
     </MainWrapper>
