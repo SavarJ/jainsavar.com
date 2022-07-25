@@ -3,7 +3,7 @@ import { SkillStore, SkillStoreItem } from "../Skills/SkillStore";
 interface projectInterface {
   title: string;
   description: string;
-  githubLink: string;
+  githubLink?: string;
   liveLink?: string;
   skills: SkillStoreItem[];
 }
