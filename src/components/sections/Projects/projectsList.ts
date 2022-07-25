@@ -12,9 +12,8 @@ const projectsList: projectInterface[] = [
   {
     title: "TheCSAutograder",
     description:
-      "A full stack web application that auto grades programming labs that are assigned to students and displays extensive submission details to the teachers.",
-    githubLink: "https://github.com/SavarJ/TheCSAutograder",
-    liveLink: "https://thecsautograder.herokuapp.com/",
+      "A platform to automate grading in high school Computer Science classes with over 300+ total active users.",
+    liveLink: "https://www.thecsautograder.com/",
     skills: [
       SkillStore.Node,
       SkillStore.Express,
@@ -49,10 +48,9 @@ const projectsList: projectInterface[] = [
     skills: [SkillStore.HTMLCSS, SkillStore.Javascript],
   },
   {
-    title: "Emailer",
-    description:
-      "Programmed a script that will read recipients’ email addresses from a csv file and send emails to them.",
-    githubLink: "https://github.com/SavarJ/autoemailer",
+    title: "Crypto Trading Bot",
+    description: "A bot that trades Bitcoin/Ethereum automatically using the RSI strategy and Coinbase API.",
+    githubLink: "https://github.com/SavarJ/trading-bot",
     skills: [SkillStore.Python],
   },
 ];
