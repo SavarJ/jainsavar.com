@@ -37,9 +37,11 @@ const ProjectCardBody: React.FC<ProjectCardBodyProps> = (props) => {
 const ProjectCardBodyLinks: React.FC<ProjectCardBodyProps> = ({ project }) => {
   return (
     <div className="flex justify-evenly mt-2">
-      <Link link={project.githubLink}>
-        <Github className="w-5" />
-      </Link>
+      {project.githubLink && (
+        <Link link={project.githubLink}>
+          <Github className="w-5" />
+        </Link>
+      )}
       {project.liveLink && (
         <Link link={project.liveLink}>
           <ExternalLink className="w-5" />

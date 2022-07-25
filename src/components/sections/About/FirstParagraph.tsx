@@ -8,7 +8,7 @@ const FirstParagraph: React.FC = () => {
       <Paragraph>
         Hello! I'm Savar Jain, currently an undergraduate student majoring in Computer Science @ University of
         Connecticut. I have been programming for about <NumberOfYearsOfProgramming />. Currently I am
-        interning at Headstarter, where I'm working full stack engineer.
+        interning at Headstarter, where I'm working as a full stack engineer.
         {/* Last year, I was a TA for{" "}
         <strong>Data Structures & Algorithms</strong>. */}
       </Paragraph>
