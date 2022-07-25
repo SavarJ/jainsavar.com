@@ -17,22 +17,16 @@ const projectsList: projectInterface[] = [
     skills: [
       SkillStore.Node,
       SkillStore.Express,
-      SkillStore.Mongo,
-      SkillStore.EJS,
-      SkillStore.Tailwind,
-      SkillStore.Javascript,
       SkillStore.Heroku,
+      // SkillStore.EJS,
+      SkillStore.Mongo,
+      SkillStore.Tailwind,
+      // SkillStore.Javascript,
     ],
   },
   {
-    title: "Crypto Trading Bot",
-    description: "A bot that trades Bitcoin/Ethereum automatically using the RSI strategy and Coinbase API.",
-    githubLink: "https://github.com/SavarJ/trading-bot",
-    skills: [SkillStore.Python],
-  },
-  {
     title: "Keeper",
-    description: "A fully responsive note taking web application with CRUD functionalities.",
+    description: "A simple note taking web application to organize your thoughts with CRUD functionalities.",
     githubLink: "https://github.com/SavarJ/keeper",
     liveLink: "https://savarj.github.io/keeper/",
     skills: [SkillStore.Mongo, SkillStore.Express, SkillStore.React, SkillStore.Node],
@@ -44,6 +38,12 @@ const projectsList: projectInterface[] = [
     githubLink: "https://github.com/SavarJ/simons-game",
     liveLink: "https://savarj.github.io/simons-game/",
     skills: [SkillStore.HTMLCSS, SkillStore.Javascript],
+  },
+  {
+    title: "Crypto Trading Bot",
+    description: "A bot that trades Bitcoin/Ethereum automatically using the RSI strategy and Coinbase API.",
+    githubLink: "https://github.com/SavarJ/trading-bot",
+    skills: [SkillStore.Python],
   },
 ];
 
