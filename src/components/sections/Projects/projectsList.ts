@@ -25,19 +25,17 @@ const projectsList: projectInterface[] = [
     ],
   },
   {
-    title: "TodoList",
-    description:
-      "A fully responsive todolist web application with CRUD (Create, read, update, delete) functionalities. You can also create multiple todolists and add tasks to them.",
-    githubLink: "https://github.com/SavarJ/todolist",
-    liveLink: "https://savarj-todolist.herokuapp.com/",
-    skills: [
-      SkillStore.HTMLCSS,
-      SkillStore.Node,
-      SkillStore.Express,
-      SkillStore.EJS,
-      SkillStore.Mongo,
-      SkillStore.Heroku,
-    ],
+    title: "Crypto Trading Bot",
+    description: "A bot that trades Bitcoin/Ethereum automatically using the RSI strategy and Coinbase API.",
+    githubLink: "https://github.com/SavarJ/trading-bot",
+    skills: [SkillStore.Python],
+  },
+  {
+    title: "Keeper",
+    description: "A fully responsive note taking web application with CRUD functionalities.",
+    githubLink: "https://github.com/SavarJ/keeper",
+    liveLink: "https://savarj.github.io/keeper/",
+    skills: [SkillStore.Mongo, SkillStore.Express, SkillStore.React, SkillStore.Node],
   },
   {
     title: "Simon's Game",
@@ -46,12 +44,6 @@ const projectsList: projectInterface[] = [
     githubLink: "https://github.com/SavarJ/simons-game",
     liveLink: "https://savarj.github.io/simons-game/",
     skills: [SkillStore.HTMLCSS, SkillStore.Javascript],
-  },
-  {
-    title: "Crypto Trading Bot",
-    description: "A bot that trades Bitcoin/Ethereum automatically using the RSI strategy and Coinbase API.",
-    githubLink: "https://github.com/SavarJ/trading-bot",
-    skills: [SkillStore.Python],
   },
 ];
 
