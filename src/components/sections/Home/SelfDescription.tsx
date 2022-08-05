@@ -17,7 +17,7 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
         >
           I'm a undergraduate student who's passionate about Computer Science.
           <br />
-          Graduating in 2025.
+          Graduating in 2025 (or possibly earlier!)
         </Typist>
       )}
     </>
