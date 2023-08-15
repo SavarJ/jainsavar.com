@@ -1,4 +1,3 @@
-import Typist from "react-typist";
 import Link from "../../shared/Link";
 
 interface SelfDescriptionProps {
@@ -10,11 +9,11 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
   return (
     <>
       {props.selfHeadingDone && (
-        <Typist
+        <h1
           className="mt-4 text-xl max-w-3xl text-gray-400 font-zb"
-          avgTypingDelay={10}
-          cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
-          onTypingDone={() => props.setSelfDescriptionDone(true)}
+          // avgTypingDelay={10}
+          // cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
+          // onTypingDone={() => props.setSelfDescriptionDone(true)}
         >
           SWE Intern @{" "}
           <Link link="https://www.amazon.com/" color="color-1">
@@ -34,7 +33,7 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
           </Link>{" "}
           <br />
           Graduating May 2025!
-        </Typist>
+        </h1>
       )}
     </>
   );

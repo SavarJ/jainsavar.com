@@ -3,7 +3,6 @@ import Linkedin from "../../icons/Linkedin";
 import Github from "../../icons/Github";
 import Twitter from "../../icons/Twitter";
 import Email from "../../icons/Email";
-const Zoom = require("react-reveal/Zoom");
 
 interface SelfSocialsProps {
   selfSubDescriptionDone: boolean;
@@ -13,7 +12,8 @@ interface SelfSocialsProps {
 const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
   /* TODO: Replace font awesome with a custom svg icons */
   return (
-    <Zoom top when={props.selfSubDescriptionDone} onReveal={() => props.setSelfSocialsDone(true)}>
+    // <Zoom top when={props.selfSubDescriptionDone} onReveal={() => props.setSelfSocialsDone(true)}>
+    <>
       <br />
       <div className="flex justify-between items-center w-40 mt-4">
         <Link link="https://github.com/SavarJ" className="icon-1">
@@ -26,7 +26,8 @@ const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
           <Email className="w-5 pb-1 border-b-2 border-blue-200 border-dotted icon-3" />
         </Link>
       </div>
-    </Zoom>
+    </>
+    // </Zoom>
   );
 };
 

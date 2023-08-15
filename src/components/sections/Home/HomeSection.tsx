@@ -10,10 +10,10 @@ import MoreArrow from "./MoreArrow";
 import FooterSection from "../Footer/FooterSection";
 
 const HomeSection: React.FC = () => {
-  const [selfHeadingDone, setSelfHeadingDone] = useState(false);
-  const [selfDescriptionDone, setSelfDescriptionDone] = useState(false);
-  const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(false);
-  const [selfSocialsDone, setSelfSocialsDone] = useState(false);
+  const [selfHeadingDone, setSelfHeadingDone] = useState(true);
+  const [selfDescriptionDone, setSelfDescriptionDone] = useState(true);
+  const [selfSubDescriptionDone, setSelfSubDescriptionDone] = useState(true);
+  const [selfSocialsDone, setSelfSocialsDone] = useState(true);
   return (
     // Since there is a padding at the top of the page and
     // full section has a height of 100vh negative margin is needed

@@ -1,4 +1,3 @@
-import Typist from "react-typist";
 import Link from "../../shared/Link";
 
 interface SelfSubDescriptionProps {
@@ -9,10 +8,10 @@ const SelfSubDescription: React.FC<SelfSubDescriptionProps> = (props) => {
   return (
     <>
       {props.selfDescriptionDone && (
-        <Typist
+        <h1
           className="text-xl text-gray-400 font-zb"
-          avgTypingDelay={10}
-          onTypingDone={() => props.setSelfSubDescription(true)}
+          // avgTypingDelay={10}
+          // onTypingDone={() => props.setSelfSubDescription(true)}
         >
           I'm actively seeking new opportunities - I specialize in Backend/ML/Data.
           <br />
@@ -27,7 +26,7 @@ const SelfSubDescription: React.FC<SelfSubDescriptionProps> = (props) => {
             jainsavar@gmail.com
           </Link>
           .
-        </Typist>
+        </h1>
       )}
     </>
   );
