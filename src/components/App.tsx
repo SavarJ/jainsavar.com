@@ -12,12 +12,12 @@ const App: React.FC = () => {
   return (
     <MainWrapper>
       <HomeSection />
-      <SubWrapper>
+      {/* <SubWrapper>
         <AboutSection />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
-      </SubWrapper>
+      </SubWrapper> */}
     </MainWrapper>
   );
 };
