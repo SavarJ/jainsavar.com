@@ -7,6 +7,7 @@ import SelfDescription from "./SelfDescription";
 import SelfSubDescription from "./SelfSubDescription";
 import SelfSocials from "./SelfSocials";
 import MoreArrow from "./MoreArrow";
+import FooterSection from "../Footer/FooterSection";
 
 const HomeSection: React.FC = () => {
   const [selfHeadingDone, setSelfHeadingDone] = useState(false);
@@ -27,7 +28,8 @@ const HomeSection: React.FC = () => {
         setSelfSubDescription={setSelfSubDescriptionDone}
       />
       <SelfSocials selfSubDescriptionDone={selfSubDescriptionDone} setSelfSocialsDone={setSelfSocialsDone} />
-      <MoreArrow selfSocialsDone={selfSocialsDone} />
+      {/* <MoreArrow selfSocialsDone={selfSocialsDone} /> */}
+      {selfSocialsDone && <FooterSection />}
     </FullSection>
   );
 };

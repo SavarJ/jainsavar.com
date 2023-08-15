@@ -1,6 +1,31 @@
 .icon {
   transition: transform ease-in 150ms;
   fill: var(--tw-blue-200);
+  animation: enlargeShrink 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.icon-1 {
+  animation-delay: 0.5s;
+}
+
+.icon-2 {
+  animation-delay: 1s;
+}
+
+.icon-3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes enlargeShrink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    fill: var(--gold-one);
+  }
 }
 
 .icon:hover,
@@ -8,6 +33,7 @@
 .icon:active {
   transform: scale(1.35);
   fill: var(--gold-one);
+  animation: none;
 }
 
 .link {
@@ -40,20 +66,20 @@
   width: 50%;
 }
 
-.link-red {
-  --link-color: red;
+.link-color-1 {
+  --link-color: #ff4d4d;
 }
 
-.link-blue {
-  --link-color: blue;
+.link-color-2 {
+  --link-color: #ffa500;
 }
 
-.link-green {
-  --link-color: green;
+.link-color-3 {
+  --link-color: #b450e1;
 }
 
-.link-yellow {
-  --link-color: yellow;
+.link-color-4 {
+  --link-color: #00cc00;
 }
 
 .link-gold {
