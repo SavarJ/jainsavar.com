@@ -29,7 +29,7 @@ const HomeSection: React.FC = () => {
       />
       <SelfSocials selfSubDescriptionDone={selfSubDescriptionDone} setSelfSocialsDone={setSelfSocialsDone} />
       {/* <MoreArrow selfSocialsDone={selfSocialsDone} /> */}
-      <FooterSection />
+      {selfSocialsDone && <FooterSection />}
     </FullSection>
   );
 };
