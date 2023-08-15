@@ -1,13 +1,10 @@
-import React, { Suspense } from "react";
-const Logo = React.lazy(() => import("../../icons/Logo"));
+import React from "react";
 const Fade = require("react-reveal/Fade");
 
 const SelfLogo: React.FC = () => {
   return (
     <Fade duration={2000} delay={100}>
-      <Suspense fallback={<div className="text-gray-400">Loading...</div>}>
-        <Logo className="mb-2" />
-      </Suspense>
+      <img src="/logo-no-background.png" alt="Savar-Jain" className="mb-4 w-1/4" />
     </Fade>
   );
 };

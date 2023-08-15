@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        myblue: "#0b4363",
+        myblue: "#052536",
       },
       spacing: {
         76: "18rem",
