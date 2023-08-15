@@ -10,8 +10,8 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
     <>
       {props.selfHeadingDone && (
         <Typist
-          className="mt-4 text-2xl max-w-3xl text-gray-400 font-zb"
-          avgTypingDelay={20}
+          className="mt-4 text-xl max-w-3xl text-gray-400 font-zb"
+          avgTypingDelay={10}
           cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
           onTypingDone={() => props.setSelfDescriptionDone(true)}
         >
