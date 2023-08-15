@@ -1,4 +1,5 @@
 import Typist from "react-typist";
+import Link from "../../shared/Link";
 
 interface SelfDescriptionProps {
   selfHeadingDone: boolean;
@@ -15,7 +16,22 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
           cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
           onTypingDone={() => props.setSelfDescriptionDone(true)}
         >
-          SWE Intern @ Amazon | Prev @ Zillow, Synchrony Financial | Jane Street FTTP '23
+          SWE Intern @{" "}
+          <Link link="https://www.amazon.com/" color="color-1">
+            Amazon
+          </Link>{" "}
+          | Prev @{" "}
+          <Link link="https://www.zillow.com/" color="color-2">
+            Zillow
+          </Link>{" "}
+          ,{" "}
+          <Link link="https://www.synchrony.com/" color="color-3">
+            Synchrony Financial
+          </Link>{" "}
+          |{" "}
+          <Link link="https://www.janestreet.com/join-jane-street/programs-and-events/fttp/" color="color-4">
+            Jane Street FTTP '23
+          </Link>{" "}
           <br />
           Graduating May 2025!
         </Typist>
