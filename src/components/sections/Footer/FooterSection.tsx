@@ -5,8 +5,8 @@ const LightSpeed = require("react-reveal/LightSpeed");
 const FooterSection: React.FC = () => {
   return (
     <LightSpeed>
-      <section className="text-center">
-        <Credits />
+      <section className="text-center absolute bottom-2">
+        {/* <Credits /> */}
         <Copyright />
       </section>
     </LightSpeed>

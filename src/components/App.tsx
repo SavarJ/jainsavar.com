@@ -17,7 +17,6 @@ const App: React.FC = () => {
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
-        <FooterSection />
       </SubWrapper>
     </MainWrapper>
   );
