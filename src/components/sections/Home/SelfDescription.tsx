@@ -15,9 +15,9 @@ const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
           cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
           onTypingDone={() => props.setSelfDescriptionDone(true)}
         >
-          I'm a undergraduate student who's passionate about Computer Science.
+          SWE Intern @ Amazon | Prev @ Zillow, Synchrony Financial | Jane Street FTTP '23
           <br />
-          Graduating in 2025 (or possibly earlier!)
+          Graduating May 2025!
         </Typist>
       )}
     </>
