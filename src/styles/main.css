@@ -26,7 +26,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .font-zb {
-  font-family: "Zilla Slab", serif;
+  font-family: "Quicksand", "Zilla Slab", serif;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.font-cabin {
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
 }
 
 .font-rubik {
