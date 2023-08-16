@@ -4,11 +4,11 @@ const SelfDescription: React.FC = () => {
   return (
     <>
       <h1 className="mt-4 text-xl max-w-3xl text-gray-400 font-zb">
-        SWE Intern @{" "}
+        SWE Intern <span className="font-cabin">@</span>{" "}
         <Link link="https://www.amazon.com/" color="color-1">
           Amazon
         </Link>{" "}
-        | Prev @{" "}
+        | Prev <span className="font-cabin">@</span>{" "}
         <Link link="https://www.zillow.com/" color="color-2">
           Zillow
         </Link>{" "}
