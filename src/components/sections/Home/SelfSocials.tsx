@@ -5,8 +5,8 @@ import Twitter from "../../icons/Twitter";
 import Email from "../../icons/Email";
 
 interface SelfSocialsProps {
-  selfSubDescriptionDone: boolean;
-  setSelfSocialsDone: (value: boolean) => void;
+  // selfSubDescriptionDone: boolean;
+  // setSelfSocialsDone: (value: boolean) => void;
 }
 
 const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
