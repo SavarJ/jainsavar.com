@@ -1,19 +1,9 @@
 import Link from "../../shared/Link";
 
-interface SelfDescriptionProps {
-  // selfHeadingDone: boolean;
-  // setSelfDescriptionDone: (value: boolean) => void;
-}
-
-const SelfDescription: React.FC<SelfDescriptionProps> = (props) => {
+const SelfDescription: React.FC = () => {
   return (
     <>
-      <h1
-        className="mt-4 text-xl max-w-3xl text-gray-400 font-zb"
-        // avgTypingDelay={10}
-        // cursor={{ hideWhenDone: true, hideWhenDoneDelay: 100 }}
-        // onTypingDone={() => props.setSelfDescriptionDone(true)}
-      >
+      <h1 className="mt-4 text-xl max-w-3xl text-gray-400 font-zb">
         SWE Intern @{" "}
         <Link link="https://www.amazon.com/" color="color-1">
           Amazon

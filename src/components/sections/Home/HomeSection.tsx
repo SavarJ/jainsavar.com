@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../../../styles/Typist.css";
 import FullSection from "../../shared/FullSection";
 import SelfLogo from "./SelfLogo";
@@ -6,9 +5,8 @@ import SelfHeading from "./SelfHeading";
 import SelfDescription from "./SelfDescription";
 import SelfSubDescription from "./SelfSubDescription";
 import SelfSocials from "./SelfSocials";
-import MoreArrow from "./MoreArrow";
 import FooterSection from "../Footer/FooterSection";
-import { Fade, Bounce, AttentionSeeker } from "react-awesome-reveal";
+import { Fade, Bounce } from "react-awesome-reveal";
 
 const HomeSection: React.FC = () => {
   const intialDelay = 250;

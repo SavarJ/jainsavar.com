@@ -1,18 +1,11 @@
 import Link from "../../shared/Link";
 import Linkedin from "../../icons/Linkedin";
 import Github from "../../icons/Github";
-import Twitter from "../../icons/Twitter";
 import Email from "../../icons/Email";
 
-interface SelfSocialsProps {
-  // selfSubDescriptionDone: boolean;
-  // setSelfSocialsDone: (value: boolean) => void;
-}
-
-const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
+const SelfSocials: React.FC = () => {
   /* TODO: Replace font awesome with a custom svg icons */
   return (
-    // <Zoom top when={props.selfSubDescriptionDone} onReveal={() => props.setSelfSocialsDone(true)}>
     <>
       <br />
       <div className="flex justify-between items-center w-40 mt-4">
@@ -27,7 +20,6 @@ const SelfSocials: React.FC<SelfSocialsProps> = (props) => {
         </Link>
       </div>
     </>
-    // </Zoom>
   );
 };
 

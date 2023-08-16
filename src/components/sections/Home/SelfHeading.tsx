@@ -1,4 +1,4 @@
-const SelfHeading: React.FC = (props) => {
+const SelfHeading: React.FC = () => {
   return (
     <h1 className="text-7xl font-inconsolata inline-block">
       Hola, I'm{" "}

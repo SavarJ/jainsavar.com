@@ -1,18 +1,10 @@
 import Link from "../../shared/Link";
 
-interface SelfSubDescriptionProps {
-  // selfDescriptionDone: boolean;
-  // setSelfSubDescription: (value: boolean) => void;
-}
-const SelfSubDescription: React.FC<SelfSubDescriptionProps> = (props) => {
+const SelfSubDescription: React.FC = () => {
   return (
     <>
       <br />
-      <h1
-        className="text-xl text-gray-400 font-zb"
-        // avgTypingDelay={10}
-        // onTypingDone={() => props.setSelfSubDescription(true)}
-      >
+      <h1 className="text-xl text-gray-400 font-zb">
         I'm actively seeking new opportunities - I specialize in Backend/ML/Data.
         <br />
         Feel free to
