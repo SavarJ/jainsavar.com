@@ -9,17 +9,7 @@ import "../styles/main.css";
 import ExperienceSection from "./sections/Experience/ExperienceSection";
 
 const App: React.FC = () => {
-  return (
-    <MainWrapper>
-      <HomeSection />
-      {/* <SubWrapper>
-        <AboutSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <SkillsSection />
-      </SubWrapper> */}
-    </MainWrapper>
-  );
+  return <HomeSection />;
 };
 
 export default App;

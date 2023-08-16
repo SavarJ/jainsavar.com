@@ -5,29 +5,30 @@ import SelfHeading from "./SelfHeading";
 import SelfDescription from "./SelfDescription";
 import SelfSubDescription from "./SelfSubDescription";
 import SelfSocials from "./SelfSocials";
-import FooterSection from "../Footer/FooterSection";
 import { Fade, Bounce } from "react-awesome-reveal";
+import Copyright from "../Footer/Copyright";
 
 const HomeSection: React.FC = () => {
   const intialDelay = 250;
   const duration = 1000;
   return (
-    // Since there is a padding at the top of the page and
-    // full section has a height of 100vh negative margin is needed
-    // so the other sections below are close enough.
-    <FullSection className="-mb-20">
-      <Fade cascade damping={0.75} delay={intialDelay} duration={duration}>
-        <SelfLogo />
-        <SelfHeading />
-        <SelfDescription />
-        <SelfSubDescription />
+    <FullSection className="max-w-full px-12 py-16 flex flex-col justify-between items-center bg-gradient-to-b from-black to-myblue">
+      <div>
+        <Fade triggerOnce cascade damping={0.75} delay={intialDelay} duration={duration}>
+          <SelfLogo />
+          <SelfHeading />
+          <SelfDescription />
+          <SelfSubDescription />
+        </Fade>
+        <Bounce delay={duration * 4} duration={3000}>
+          <SelfSocials />
+        </Bounce>
+      </div>
+      {/* <div> */}
+      <Fade triggerOnce delay={duration * 5 + intialDelay}>
+        <Copyright />
       </Fade>
-      <Bounce delay={duration * 4} duration={3000}>
-        <SelfSocials />
-      </Bounce>
-      <Fade delay={duration * 5 + intialDelay}>
-        <FooterSection />
-      </Fade>
+      {/* </div> */}
     </FullSection>
   );
 };
