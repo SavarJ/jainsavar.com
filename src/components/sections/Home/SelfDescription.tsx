@@ -21,7 +21,7 @@ const SelfDescription: React.FC = () => {
           Jane Street FTTP '23
         </Link>{" "}
         <br />
-        Graduating May 2025!
+        Graduating May 2026!
       </h1>
     </>
   );
