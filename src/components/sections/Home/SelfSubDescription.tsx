@@ -5,7 +5,7 @@ const SelfSubDescription: React.FC = () => {
     <>
       <br />
       <h1 className="text-xl text-gray-400 font-zb">
-        I'm actively seeking new opportunities - I specialize in Backend/ML/Data.
+        I'm actively seeking new opportunities - I specialize in C++ & Distributed Systems.
         <br />
         Feel free to
         {/* check out my{" "}

@@ -82,6 +82,22 @@
   --link-color: #00cc00;
 }
 
+.link-mongo {
+  --link-color: #57b657;
+}
+
+.link-amazon {
+  --link-color: #ff9900;
+}
+
+.link-zillow {
+  --link-color: #0074e4;
+}
+
+.link-synchrony {
+  --link-color: #ffc72c;
+}
+
 .link-gold {
   --link-color: var(--gold-one);
   background: var(--link-color);
