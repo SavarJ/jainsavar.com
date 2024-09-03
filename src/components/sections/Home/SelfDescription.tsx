@@ -5,7 +5,7 @@ const SelfDescription: React.FC = () => {
     <>
       <h1 className="mt-4 text-xl max-w-3xl text-gray-400 font-zb">
         Prev SWE Intern <span className="font-cabin">@</span>{" "}
-        <Link link="https://github.com/mongodb/mongo/commits/master/?author=savarjjj" color="mongo">
+        <Link link="https://github.com/mongodb/mongo/commits/master/?author=savarj" color="mongo">
           MongoDB
         </Link>
         ,{" "}
