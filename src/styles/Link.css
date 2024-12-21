@@ -74,12 +74,16 @@
   --link-color: #ffa500;
 }
 
-.link-color-3 {
-  --link-color: #b450e1;
-}
-
 .link-color-4 {
   --link-color: #00cc00;
+}
+
+.link-js {
+  --link-color: #046fda;
+}
+
+.link-datadog {
+  --link-color: #8a3ffc;
 }
 
 .link-mongo {
