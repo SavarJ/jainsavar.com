@@ -17,6 +17,10 @@
   animation-delay: 1.5s;
 }
 
+.icon-4 {
+  animation-delay: 2s;
+}
+
 @keyframes enlargeShrink {
   0%,
   100% {
@@ -79,14 +83,14 @@
 }
 
 .link-js {
-  --link-color: #046fda;
+  --link-color: #00b4ab;
 }
 
 .link-datadog {
   --link-color: #8a3ffc;
 }
 
-.link-mongo {
+.link-mongodb {
   --link-color: #57b657;
 }
 
@@ -95,7 +99,15 @@
 }
 
 .link-zillow {
-  --link-color: #0074e4;
+  --link-color: #0041d9;
+}
+
+.link-linkedin {
+  --link-color: #0a66c2;
+}
+
+.link-instagram {
+  --link-color: #e1306c;
 }
 
 .link-synchrony {

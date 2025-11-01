@@ -1,7 +1,7 @@
 const SelfHeading: React.FC = () => {
   return (
-    <h1 className="text-7xl font-inconsolata inline-block">
-      Hola, I'm{" "}
+    <h1 className="inline-block text-7xl font-inconsolata">
+      Hi, I'm{" "}
       <span className="font-bold tracking-wide" style={{ color: "#19B5FE" }}>
         Savar
       </span>

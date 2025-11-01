@@ -3,7 +3,6 @@ import FullSection from "../../shared/FullSection";
 import SelfLogo from "./SelfLogo";
 import SelfHeading from "./SelfHeading";
 import SelfDescription from "./SelfDescription";
-import SelfSubDescription from "./SelfSubDescription";
 import SelfSocials from "./SelfSocials";
 import { Fade, Bounce } from "react-awesome-reveal";
 import Copyright from "../Footer/Copyright";
@@ -18,7 +17,6 @@ const HomeSection: React.FC = () => {
           <SelfLogo />
           <SelfHeading />
           <SelfDescription />
-          <SelfSubDescription />
         </Fade>
         <Bounce delay={duration * 4} duration={3000}>
           <SelfSocials />
