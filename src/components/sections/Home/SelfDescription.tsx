@@ -43,7 +43,12 @@ const SelfDescription: React.FC = () => {
       />
       <br />
       <br />
-      Feel free to reach out :)
+      Feel free to check out my{" "}
+      <Link link="/resume" color="gold">
+        resume template here!
+      </Link>{" "}
+      {":)"}
+      <br />
       <br />
       <br />
     </h1>
